@@ -19,32 +19,14 @@ namespace AMS.View
         {
             InitializeComponent();
         }
-        private bool IsFormActive(Form form)
+        Form CheckForm(Type fType)
         {
-            bool IsOpened = false;
-            //If There Is More Than One Form Opened
-            if (MdiChildren.Count() > 0)
+            foreach (var f in this.MdiChildren)
             {
-                foreach (var item in MdiChildren)
-                {
-                    if (form.Name == item.Name)
-                    {
-                        // Active This Form
-                        xtraTabbedMdiManager1.Pages[item].MdiChild.Activate();
-                        IsOpened = true;
-                    }
-                }
+                if (f.GetType() == fType)
+                    return f;
             }
-            return IsOpened;
-        }
-        public void Viewchild(Form _form)
-        {
-            //Check Before Open
-            if (!IsFormActive(_form))
-            {
-                _form.MdiParent = this;
-                _form.Show();
-            }
+            return null;
         }
         private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -53,16 +35,28 @@ namespace AMS.View
 
         private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
         {
-            frmApartment f = new frmApartment();
-            f.MdiParent = this;
-            f.Show();
+            Form frm = CheckForm(typeof(frmApartment));
+            if (frm != null)
+                frm.Activate();
+            else
+            {
+                frmApartment fr = new frmApartment();
+                fr.MdiParent = this;
+                fr.Show();
+            }
         }
 
         private void btnHD_ItemClick(object sender, ItemClickEventArgs e)
         {
-            frmHD f = new frmHD();
-            f.MdiParent = this;
-            f.Show();
+            Form frm = CheckForm(typeof(frmHD));
+            if (frm != null)
+                frm.Activate();
+            else
+            {
+                frmHD fr = new frmHD();
+                fr.MdiParent = this;
+                fr.Show();
+            }
         }
 
         private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
@@ -77,9 +71,15 @@ namespace AMS.View
 
         private void btnApart_ItemClick(object sender, ItemClickEventArgs e)
         {
-            frmApartment f = new frmApartment();
-            f.MdiParent = this;
-            f.Show();
+            Form frm = CheckForm(typeof(frmApartment));
+            if (frm != null)
+                frm.Activate();
+            else
+            {
+                frmApartment fr = new frmApartment();
+                fr.MdiParent = this;
+                fr.Show();
+            }
         }
     }
 }

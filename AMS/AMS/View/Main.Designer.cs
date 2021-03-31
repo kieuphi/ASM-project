@@ -187,11 +187,6 @@ namespace AMS.View
             // 
             // barButtonItem2
             // 
-            this.barButtonItem2.Caption = "Thêm mới";
-            this.barButtonItem2.Id = 2;
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
             // btnApart
             // 
@@ -242,11 +237,6 @@ namespace AMS.View
             // 
             // barButtonItem7
             // 
-            this.barButtonItem7.Caption = "Tạo hợp đồng";
-            this.barButtonItem7.Id = 10;
-            this.barButtonItem7.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.ImageOptions.LargeImage")));
-            this.barButtonItem7.Name = "barButtonItem7";
-            this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
             // 
             // btnHD
             // 
@@ -323,11 +313,6 @@ namespace AMS.View
             // 
             // barButtonItem8
             // 
-            this.barButtonItem8.Caption = "Email";
-            this.barButtonItem8.Id = 21;
-            this.barButtonItem8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.LargeImage")));
-            this.barButtonItem8.Name = "barButtonItem8";
-            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
             // barButtonItem18
             // 

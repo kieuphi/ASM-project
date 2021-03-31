@@ -28,10 +28,6 @@ namespace AMS.View
             }
             return null;
         }
-        private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
 
         private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -57,16 +53,6 @@ namespace AMS.View
                 fr.MdiParent = this;
                 fr.Show();
             }
-        }
-
-        private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
-        }
-
-        private void barButtonItem7_ItemClick(object sender, ItemClickEventArgs e)
-        {
-
         }
 
         private void btnApart_ItemClick(object sender, ItemClickEventArgs e)

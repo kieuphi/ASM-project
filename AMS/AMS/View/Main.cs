@@ -67,5 +67,18 @@ namespace AMS.View
                 fr.Show();
             }
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            Form frm = CheckForm(typeof(frmLoadRoom));
+            if (frm != null)
+                frm.Activate();
+            else
+            {
+                frmLoadRoom fr = new frmLoadRoom();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+        }
     }
 }

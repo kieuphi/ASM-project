@@ -162,7 +162,7 @@ namespace AMS.View
             this.barSubItem2,
             this.barButtonItem30});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 38;
+            this.ribbon.MaxItemId = 41;
             this.ribbon.Name = "ribbon";
             this.ribbon.OptionsMenuMinWidth = 385;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -173,7 +173,7 @@ namespace AMS.View
             this.ribbonPage5,
             this.ribbonPage6,
             this.ribbonPage7});
-            this.ribbon.Size = new System.Drawing.Size(1541, 148);
+            this.ribbon.Size = new System.Drawing.Size(1676, 148);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // barButtonItem1
@@ -187,12 +187,14 @@ namespace AMS.View
             // 
             // barButtonItem2
             // 
+            this.barButtonItem2.Id = 38;
+            this.barButtonItem2.Name = "barButtonItem2";
             // 
             // btnApart
             // 
             this.btnApart.Caption = "Danh sách";
             this.btnApart.Id = 3;
-            this.btnApart.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.btnApart.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnApart.ImageOptions.LargeImage")));
             this.btnApart.Name = "btnApart";
             this.btnApart.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnApart_ItemClick);
             // 
@@ -237,6 +239,8 @@ namespace AMS.View
             // 
             // barButtonItem7
             // 
+            this.barButtonItem7.Id = 39;
+            this.barButtonItem7.Name = "barButtonItem7";
             // 
             // btnHD
             // 
@@ -313,6 +317,8 @@ namespace AMS.View
             // 
             // barButtonItem8
             // 
+            this.barButtonItem8.Id = 40;
+            this.barButtonItem8.Name = "barButtonItem8";
             // 
             // barButtonItem18
             // 
@@ -613,7 +619,7 @@ namespace AMS.View
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 864);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1541, 33);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1676, 33);
             // 
             // navBarGroup5
             // 
@@ -765,7 +771,7 @@ namespace AMS.View
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1541, 897);
+            this.ClientSize = new System.Drawing.Size(1676, 897);
             this.Controls.Add(this.dockPanel1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
@@ -776,6 +782,7 @@ namespace AMS.View
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "APARTMENT MANAGER SOLUTIONS";
+            this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
             this.dockPanel1.ResumeLayout(false);

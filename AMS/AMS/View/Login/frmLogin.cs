@@ -23,5 +23,12 @@ namespace AMS.View.Login
             Main f = new Main();
                 f.Show();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Main f = new Main();
+            f.Show();
+            this.Hide();
+        }
     }
 }

@@ -97,6 +97,12 @@
     <Compile Include="View\Apartment\frmApartment_Insert.Designer.cs">
       <DependentUpon>frmApartment_Insert.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmLoadRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmLoadRoom.Designer.cs">
+      <DependentUpon>frmLoadRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Login\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     <EmbeddedResource Include="View\Apartment\frmApartment_Insert.resx">
       <DependentUpon>frmApartment_Insert.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\frmLoadRoom.resx">
+      <DependentUpon>frmLoadRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +166,26 @@
   <ItemGroup>
     <Folder Include="Main\" />
     <Folder Include="View\System\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{e59ae08d-41d8-4935-a8fa-9edab18a262f}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{850ca1ac-954e-4653-bd5f-5c8898186b59}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OBJ\OBJ.csproj">
+      <Project>{2ab8c2a5-6ef3-4530-b27d-996a043e602b}</Project>
+      <Name>OBJ</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\out.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,8 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using OBJ;
 using DAL;
+using VOBJ;
 namespace AMS.View
 {
     public partial class frmLoadRoom : DevExpress.XtraEditors.XtraForm

@@ -47,9 +47,9 @@
     <Compile Include="Room_DAL.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OBJ\OBJ.csproj">
-      <Project>{eef9f147-b91a-4d44-bd2f-4beaed337ea2}</Project>
-      <Name>OBJ</Name>
+    <ProjectReference Include="..\VOBJ\VOBJ.csproj">
+      <Project>{b77485f0-ccf1-4f03-94af-2ff41728943a}</Project>
+      <Name>VOBJ</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

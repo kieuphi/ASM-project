@@ -34,14 +34,14 @@ namespace AMS.View
                 switch (item.Floor)
                 {
                     case "1":
-                        btn.Image = Image.FromFile("D:\\in.png");
+                        btn.Image = Image.FromFile("D:\\RoomMapIconV2\\ArrivalArrowV2_16x16.png");
                         btn.ImageOptions.ImageToTextAlignment = ImageAlignToText.TopCenter;
                         btn.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Default;
                         //btn.BackColor = Color.LightSteelBlue;
 
                         break;
                     default:
-                        btn.Image = Image.FromFile("D:\\out.png");
+                        btn.Image = Image.FromFile("D:\\RoomMapIconV2\\DepArrowV2_16x16.png");
                         btn.ImageOptions.ImageToTextAlignment = ImageAlignToText.TopCenter;
                         btn.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Default;
                         //btn.BackColor = Color.LightPink;
@@ -54,8 +54,8 @@ namespace AMS.View
 
         void btn_Click(object sender, EventArgs e)
         {
-            string PtnID = ((sender as Button).Tag as Room_OBJ).RoomCode;
-
+            string PtnID = ((sender as SimpleButton).Tag as Room_OBJ).RoomCode;
+            XtraMessageBox.Show("Đây là phòng '" + PtnID + "'", "Thông báo");
 
             //gridControl1.DataSource = busts.LayTenTS(" where MAPTN = '" + PtnID + "'");
         }

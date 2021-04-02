@@ -34,17 +34,29 @@ namespace AMS.View
                 switch (item.Floor)
                 {
                     case "1":
-                        btn.Image = Image.FromFile("D:\\RoomMapIconV2\\ArrivalArrowV2_16x16.png");
-                        btn.ImageOptions.ImageToTextAlignment = ImageAlignToText.TopCenter;
+                        btn.ImageOptions.Image = ((System.Drawing.Image)(AMS.Properties.Resources.ArrivalArrowV2_16x16));
+                        btn.ImageOptions.Location = ImageLocation.TopLeft;
                         btn.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Default;
-                        //btn.BackColor = Color.LightSteelBlue;
-
+                        btn.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
                         break;
-                    default:
-                        btn.Image = Image.FromFile("D:\\RoomMapIconV2\\DepArrowV2_16x16.png");
-                        btn.ImageOptions.ImageToTextAlignment = ImageAlignToText.TopCenter;
+                    case "3":
+                        btn.ImageOptions.Image = ((System.Drawing.Image)(AMS.Properties.Resources.DepArrowV2_16x16));
+                        btn.ImageOptions.Location = ImageLocation.BottomRight;
                         btn.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Default;
-                        //btn.BackColor = Color.LightPink;
+                        btn.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+                        break;
+                    case "2":
+                       // btn.Image = Image.FromFile("D:\\RoomMapIconV2\\ArrivalArrowV2_16x16.png");
+                        btn.ImageOptions.ImageToTextAlignment = ImageAlignToText.TopLeft;
+                        btn.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Default;
+                        btn.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+                        break;
+
+                    default:
+                        //btn.Image = Image.FromFile("D:\\RoomMapIconV2\\DepArrowV2_16x16.png");
+                        btn.ImageOptions.ImageToTextAlignment = ImageAlignToText.BottomRight;
+                       btn.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Default;
+                        btn.BackColor = Color.GreenYellow;
                         break;
                 }
 
@@ -58,6 +70,10 @@ namespace AMS.View
             XtraMessageBox.Show("Đây là phòng '" + PtnID + "'", "Thông báo");
 
             //gridControl1.DataSource = busts.LayTenTS(" where MAPTN = '" + PtnID + "'");
+        }
+
+        private void frmLoadRoom_Load(object sender, EventArgs e)
+        {
         }
     }
 }

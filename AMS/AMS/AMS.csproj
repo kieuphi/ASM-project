@@ -196,5 +196,134 @@
   <ItemGroup>
     <None Include="Resources\out.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrivalArrowV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrivalArrowV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrivalWalkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Birthday_HoneyMoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BirthDayV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BirthDayV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-inV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkinwalkinguestV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cleanV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConnectRoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConnectRoomSL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DepArrow_ArrivalV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DepArrowV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DepArrowV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DepartureWalkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirtyV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirtyV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExtraBedV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExtraBedV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groupbalanceV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groupinfoV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guestbalanceV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guestinfoV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\houseuseV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JoinBedV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LateCheckinV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LateCheckinV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-showV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomStatusV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S.RequestV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwaproomV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top-Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TwoHeartsV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TwoHeartsV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk_in_guest_roomV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk_in_guest_roomV2_16x16.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

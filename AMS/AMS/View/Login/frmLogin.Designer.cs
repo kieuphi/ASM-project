@@ -29,6 +29,7 @@ namespace AMS.View.Login
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.btnLogin = new DevExpress.XtraEditors.SimpleButton();
@@ -61,6 +62,8 @@ namespace AMS.View.Login
             // 
             // btnLogin
             // 
+            this.btnLogin.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnLogin.Appearance.Options.UseBackColor = true;
             this.btnLogin.Location = new System.Drawing.Point(98, 146);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(91, 29);
@@ -70,9 +73,14 @@ namespace AMS.View.Login
             // 
             // simpleButton2
             // 
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.simpleButton2.Appearance.Options.UseBackColor = true;
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.ImageOptions.ImageUri.Uri = "Add";
+            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopLeft;
             this.simpleButton2.Location = new System.Drawing.Point(195, 146);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(91, 29);
+            this.simpleButton2.Size = new System.Drawing.Size(134, 116);
             this.simpleButton2.TabIndex = 1;
             this.simpleButton2.Text = "Thoát";
             // 
@@ -102,7 +110,7 @@ namespace AMS.View.Login
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(98, 192);
+            this.labelControl3.Location = new System.Drawing.Point(76, 258);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(189, 14);
             this.labelControl3.TabIndex = 4;
@@ -112,7 +120,7 @@ namespace AMS.View.Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 224);
+            this.ClientSize = new System.Drawing.Size(435, 313);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.checkEdit1);
             this.Controls.Add(this.labelControl2);

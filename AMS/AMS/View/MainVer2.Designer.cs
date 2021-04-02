@@ -1,7 +1,7 @@
 ﻿
 namespace AMS.View
 {
-    partial class frmLoadRoom
+    partial class MainVer2
     {
         /// <summary>
         /// Required designer variable.
@@ -29,32 +29,11 @@ namespace AMS.View
         /// </summary>
         private void InitializeComponent()
         {
-            this.flbTable = new System.Windows.Forms.FlowLayoutPanel();
-            this.SuspendLayout();
-            // 
-            // flbTable
-            // 
-            this.flbTable.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flbTable.Location = new System.Drawing.Point(0, 0);
-            this.flbTable.Name = "flbTable";
-            this.flbTable.Size = new System.Drawing.Size(1152, 617);
-            this.flbTable.TabIndex = 0;
-            // 
-            // frmLoadRoom
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 617);
-            this.Controls.Add(this.flbTable);
-            this.Name = "frmLoadRoom";
-            this.Text = "frmLoadRoom";
-            this.Load += new System.EventHandler(this.frmLoadRoom_Load);
-            this.ResumeLayout(false);
-
+            this.Text = "MainVer2";
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel flbTable;
     }
 }

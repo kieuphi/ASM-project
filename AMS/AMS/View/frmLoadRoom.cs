@@ -25,24 +25,25 @@ namespace AMS.View
 
             foreach (Room_OBJ item in ptnlist)
             {
-                Button btn = new Button() { Width = Room_DAL.PTNWith, Height = Room_DAL.PTNHeight };
+                SimpleButton btn = new SimpleButton() { Width = Room_DAL.PTNWith, Height = Room_DAL.PTNHeight };
 
-                btn.Text = item.Floor + Environment.NewLine + item.Floor;
+                //btn.Text = item.RoomName + Environment.NewLine + item.RoomName;
+                btn.Text = item.RoomName + Environment.NewLine;
                 btn.Click += btn_Click;
                 btn.Tag = item;
                 switch (item.Floor)
                 {
                     case "1":
                         btn.Image = Image.FromFile("D:\\in.png");
-                        btn.ImageAlign = ContentAlignment.TopCenter;
-                        btn.TextAlign = ContentAlignment.BottomCenter;
+                        btn.ImageOptions.ImageToTextAlignment = ImageAlignToText.TopCenter;
+                        btn.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Default;
                         //btn.BackColor = Color.LightSteelBlue;
 
                         break;
                     default:
                         btn.Image = Image.FromFile("D:\\out.png");
-                        btn.ImageAlign = ContentAlignment.TopCenter;
-                        btn.TextAlign = ContentAlignment.BottomCenter;
+                        btn.ImageOptions.ImageToTextAlignment = ImageAlignToText.TopCenter;
+                        btn.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Default;
                         //btn.BackColor = Color.LightPink;
                         break;
                 }

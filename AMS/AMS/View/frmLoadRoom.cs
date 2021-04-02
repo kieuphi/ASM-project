@@ -10,6 +10,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAL;
 using VOBJ;
+using System.Reflection;
+using DevExpress.XtraEditors.ViewInfo;
+using DevExpress.XtraEditors.Drawing;
+using AMS.Common;
+using DevExpress.Skins;
+using DevExpress.LookAndFeel;
+
 namespace AMS.View
 {
     public partial class frmLoadRoom : DevExpress.XtraEditors.XtraForm
@@ -30,25 +37,23 @@ namespace AMS.View
                 //btn.Text = item.RoomName + Environment.NewLine + item.RoomName;
                 btn.Text = item.RoomName + Environment.NewLine;
                 btn.Click += btn_Click;
+                
                 btn.Tag = item;
                 switch (item.Floor)
                 {
                     case "1":
                         btn.ImageOptions.Image = ((System.Drawing.Image)(AMS.Properties.Resources.ArrivalArrowV2_16x16));
-                        btn.ImageOptions.Location = ImageLocation.TopLeft;
-                        btn.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Default;
+                        btn.ImageOptions.Location = ImageLocation.TopLeft;                      
                         btn.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
                         break;
                     case "3":
                         btn.ImageOptions.Image = ((System.Drawing.Image)(AMS.Properties.Resources.DepArrowV2_16x16));
                         btn.ImageOptions.Location = ImageLocation.BottomRight;
-                        btn.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Default;
                         btn.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
                         break;
                     case "2":
-                       // btn.Image = Image.FromFile("D:\\RoomMapIconV2\\ArrivalArrowV2_16x16.png");
-                        btn.ImageOptions.ImageToTextAlignment = ImageAlignToText.TopLeft;
-                        btn.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Default;
+                        btn.ImageOptions.Image = ((System.Drawing.Image)(AMS.Properties.Resources.broom_16x16));
+                        btn.ImageOptions.Location = ImageLocation.BottomCenter;
                         btn.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
                         break;
 
@@ -67,13 +72,23 @@ namespace AMS.View
         void btn_Click(object sender, EventArgs e)
         {
             string PtnID = ((sender as SimpleButton).Tag as Room_OBJ).RoomCode;
-            XtraMessageBox.Show("Đây là phòng '" + PtnID + "'", "Thông báo");
+            //XtraMessageBox.Show("Đây là phòng '" + PtnID + "'", "Thông báo");
+            txtRoomCode.Text = PtnID;
+            SimpleButton btn = new SimpleButton() { Width = Room_DAL.PTNWith, Height = Room_DAL.PTNHeight };
+            
 
-            //gridControl1.DataSource = busts.LayTenTS(" where MAPTN = '" + PtnID + "'");
         }
-
+        void btn_MouseDown(object sender, EventArgs e)
+        {
+            XtraMessageBox.Show("Chuột phải", "Thông báo");
+        }
         private void frmLoadRoom_Load(object sender, EventArgs e)
         {
+        }
+        private void btn_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                MessageBox.Show("Click");
         }
     }
 }

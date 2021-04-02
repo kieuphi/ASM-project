@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\dbConnect.cs" />
+    <Compile Include="Common\ImageStateHelper.cs" />
     <Compile Include="MainVer2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -324,6 +325,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\walk_in_guest_roomV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

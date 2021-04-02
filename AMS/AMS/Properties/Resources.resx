@@ -142,6 +142,9 @@
   <data name="broom_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\broom_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="checkinwalkinguestV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkinwalkinguestV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

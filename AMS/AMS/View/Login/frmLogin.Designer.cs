@@ -29,7 +29,6 @@ namespace AMS.View.Login
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.btnLogin = new DevExpress.XtraEditors.SimpleButton();
@@ -73,14 +72,13 @@ namespace AMS.View.Login
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.simpleButton2.Appearance.Options.UseBackColor = true;
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.ImageOptions.ImageUri.Uri = "Add";
-            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopLeft;
-            this.simpleButton2.Location = new System.Drawing.Point(195, 146);
+            this.simpleButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.simpleButton2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.simpleButton2.Location = new System.Drawing.Point(219, 146);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(134, 116);
+            this.simpleButton2.Size = new System.Drawing.Size(98, 90);
             this.simpleButton2.TabIndex = 1;
             this.simpleButton2.Text = "Thoát";
             // 

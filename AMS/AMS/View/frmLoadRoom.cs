@@ -29,7 +29,7 @@ namespace AMS.View
             loadptn();            
         }
         public string xem;
-       
+        public virtual bool AllowRestoreToAutoHideContainer { get; set; }
         void loadptn()
         {
             List<Room_OBJ> ptnlist = Room_DAL.Instance.LoadPTNlist("");
@@ -41,7 +41,7 @@ namespace AMS.View
                 this.barManager1.SetPopupContextMenu(btn, this.popupMenu1);
                 //btn.Text = item.RoomName + Environment.NewLine + item.RoomName;
                 btn.Text = item.RoomName + Environment.NewLine;
-                btn.MouseClick += btn_MouseClick;
+                btn.MouseClick += btn_Click;
                 btn.Tag = item;
                
                 switch (item.Floor)
@@ -74,20 +74,9 @@ namespace AMS.View
             }
         }
 
-        void btn_MouseClick(object sender, MouseEventArgs e)
+        void btn_Click(object sender, MouseEventArgs e)
         {
-            switch (e.Button)
-            {
-
-                case MouseButtons.Left:
-                    XtraMessageBox.Show("chuột trái", "thông báo");
-                    break;
-
-                case MouseButtons.Right:
-                    XtraMessageBox.Show("chuột phải", "thông báo");
-                    break;
-                  
-}
+            AllowRestoreToAutoHideContainer = false;
         }
         private void frmLoadRoom_Load(object sender, EventArgs e)
         {
@@ -96,6 +85,7 @@ namespace AMS.View
 
         void btn_SubCheckIn_ItemClick(object sender, ItemClickEventArgs e)
         {
+
             //string PtnID = ((sender as SimpleButton).Tag as Room_OBJ).RoomCode;
             //frmLogin f = new frmLogin();
             //f.nanami = PtnID;
@@ -108,6 +98,11 @@ namespace AMS.View
         }
 
         private void simpleButton7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dockPanel1_Click(object sender, EventArgs e)
         {
 
         }

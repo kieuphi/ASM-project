@@ -16,6 +16,8 @@ using DevExpress.XtraEditors.Drawing;
 using AMS.Common;
 using DevExpress.Skins;
 using DevExpress.LookAndFeel;
+using AMS.View.Login;
+using DevExpress.XtraBars;
 
 namespace AMS.View
 {
@@ -24,8 +26,10 @@ namespace AMS.View
         public frmLoadRoom()
         {
             InitializeComponent();
-            loadptn();
+            loadptn();            
         }
+        public string xem;
+       
         void loadptn()
         {
             List<Room_OBJ> ptnlist = Room_DAL.Instance.LoadPTNlist("");
@@ -34,11 +38,12 @@ namespace AMS.View
             {
                 SimpleButton btn = new SimpleButton() { Width = Room_DAL.PTNWith, Height = Room_DAL.PTNHeight };
 
+                this.barManager1.SetPopupContextMenu(btn, this.popupMenu1);
                 //btn.Text = item.RoomName + Environment.NewLine + item.RoomName;
                 btn.Text = item.RoomName + Environment.NewLine;
-                btn.Click += btn_Click;
-                
+                btn.MouseClick += btn_MouseClick;
                 btn.Tag = item;
+               
                 switch (item.Floor)
                 {
                     case "1":
@@ -69,26 +74,42 @@ namespace AMS.View
             }
         }
 
-        void btn_Click(object sender, EventArgs e)
+        void btn_MouseClick(object sender, MouseEventArgs e)
         {
-            string PtnID = ((sender as SimpleButton).Tag as Room_OBJ).RoomCode;
-            //XtraMessageBox.Show("Đây là phòng '" + PtnID + "'", "Thông báo");
-            txtRoomCode.Text = PtnID;
-            SimpleButton btn = new SimpleButton() { Width = Room_DAL.PTNWith, Height = Room_DAL.PTNHeight };
-            
+            switch (e.Button)
+            {
 
-        }
-        void btn_MouseDown(object sender, EventArgs e)
-        {
-            XtraMessageBox.Show("Chuột phải", "Thông báo");
+                case MouseButtons.Left:
+                    XtraMessageBox.Show("chuột trái", "thông báo");
+                    break;
+
+                case MouseButtons.Right:
+                    XtraMessageBox.Show("chuột phải", "thông báo");
+                    break;
+                  
+}
         }
         private void frmLoadRoom_Load(object sender, EventArgs e)
         {
+
         }
-        private void btn_MouseClick(object sender, MouseEventArgs e)
+
+        void btn_SubCheckIn_ItemClick(object sender, ItemClickEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
-                MessageBox.Show("Click");
+            //string PtnID = ((sender as SimpleButton).Tag as Room_OBJ).RoomCode;
+            //frmLogin f = new frmLogin();
+            //f.nanami = PtnID;
+            //f.Show();
+        }
+
+        private void btn_SubCheckout_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void simpleButton7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

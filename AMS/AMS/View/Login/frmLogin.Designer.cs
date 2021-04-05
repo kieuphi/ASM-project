@@ -97,6 +97,9 @@ namespace AMS.View.Login
             this.simpleButton2.AppearancePressed.Options.UseBorderColor = true;
             this.simpleButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.simpleButton2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.simpleButton2.ImageOptions.Image = global::AMS.Properties.Resources.ArrivalArrowV2_16x16;
+            this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
+            this.simpleButton2.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopLeft;
             this.simpleButton2.Location = new System.Drawing.Point(219, 146);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(98, 90);

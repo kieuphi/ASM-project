@@ -38,8 +38,6 @@ namespace AMS.View
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
-            this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
-            this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.btn_SubCheckIn = new DevExpress.XtraBars.BarButtonItem();
             this.btn_SubCheckout = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
@@ -58,7 +56,6 @@ namespace AMS.View
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
-            this.dockPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,12 +71,12 @@ namespace AMS.View
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(901, 43);
+            this.panelControl1.Size = new System.Drawing.Size(1241, 43);
             this.panelControl1.TabIndex = 1;
             // 
             // searchControl1
             // 
-            this.searchControl1.Location = new System.Drawing.Point(12, 2);
+            this.searchControl1.Location = new System.Drawing.Point(12, 4);
             this.searchControl1.MenuManager = this.barManager1;
             this.searchControl1.Name = "searchControl1";
             this.searchControl1.Properties.AutoHeight = false;
@@ -111,15 +108,15 @@ namespace AMS.View
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1152, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(1241, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 617);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 676);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1152, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1241, 0);
             // 
             // barDockControlLeft
             // 
@@ -127,22 +124,20 @@ namespace AMS.View
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 617);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 676);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1152, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(1241, 0);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 617);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 676);
             // 
             // dockManager1
             // 
             this.dockManager1.Form = this;
             this.dockManager1.MenuManager = this.barManager1;
-            this.dockManager1.RootPanels.AddRange(new DevExpress.XtraBars.Docking.DockPanel[] {
-            this.dockPanel1});
             this.dockManager1.TopZIndexControls.AddRange(new string[] {
             "DevExpress.XtraBars.BarDockControl",
             "DevExpress.XtraBars.StandaloneBarDockControl",
@@ -156,25 +151,6 @@ namespace AMS.View
             "DevExpress.XtraBars.TabFormControl",
             "DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl",
             "DevExpress.XtraBars.ToolbarForm.ToolbarFormControl"});
-            // 
-            // dockPanel1
-            // 
-            this.dockPanel1.Controls.Add(this.dockPanel1_Container);
-            this.dockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right;
-            this.dockPanel1.ID = new System.Guid("94fd4cf7-75c8-4da4-aef5-8e226bfe72bd");
-            this.dockPanel1.Location = new System.Drawing.Point(901, 0);
-            this.dockPanel1.Name = "dockPanel1";
-            this.dockPanel1.OriginalSize = new System.Drawing.Size(251, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(251, 617);
-            this.dockPanel1.Text = "Thông tin phòng";
-            this.dockPanel1.Click += new System.EventHandler(this.dockPanel1_Click);
-            // 
-            // dockPanel1_Container
-            // 
-            this.dockPanel1_Container.Location = new System.Drawing.Point(4, 24);
-            this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(244, 590);
-            this.dockPanel1_Container.TabIndex = 0;
             // 
             // btn_SubCheckIn
             // 
@@ -224,7 +200,7 @@ namespace AMS.View
             // simpleButton3
             // 
             this.simpleButton3.ImageOptions.Image = global::AMS.Properties.Resources.ooo;
-            this.simpleButton3.Location = new System.Drawing.Point(366, 1);
+            this.simpleButton3.Location = new System.Drawing.Point(366, 3);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(89, 37);
             this.simpleButton3.TabIndex = 0;
@@ -233,7 +209,7 @@ namespace AMS.View
             // simpleButton6
             // 
             this.simpleButton6.ImageOptions.Image = global::AMS.Properties.Resources.ooo;
-            this.simpleButton6.Location = new System.Drawing.Point(461, 1);
+            this.simpleButton6.Location = new System.Drawing.Point(461, 3);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.Size = new System.Drawing.Size(113, 37);
             this.simpleButton6.TabIndex = 0;
@@ -242,7 +218,7 @@ namespace AMS.View
             // simpleButton5
             // 
             this.simpleButton5.ImageOptions.Image = global::AMS.Properties.Resources.guestbalanceV2;
-            this.simpleButton5.Location = new System.Drawing.Point(271, 1);
+            this.simpleButton5.Location = new System.Drawing.Point(271, 3);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(90, 37);
             this.simpleButton5.TabIndex = 0;
@@ -251,7 +227,7 @@ namespace AMS.View
             // simpleButton7
             // 
             this.simpleButton7.ImageOptions.Image = global::AMS.Properties.Resources.infoV2;
-            this.simpleButton7.Location = new System.Drawing.Point(580, 1);
+            this.simpleButton7.Location = new System.Drawing.Point(580, 3);
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Size = new System.Drawing.Size(113, 37);
             this.simpleButton7.TabIndex = 0;
@@ -282,17 +258,16 @@ namespace AMS.View
             this.flbTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flbTable.Location = new System.Drawing.Point(0, 43);
             this.flbTable.Name = "flbTable";
-            this.flbTable.Size = new System.Drawing.Size(901, 574);
+            this.flbTable.Size = new System.Drawing.Size(1241, 633);
             this.flbTable.TabIndex = 7;
             // 
             // frmLoadRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 617);
+            this.ClientSize = new System.Drawing.Size(1241, 676);
             this.Controls.Add(this.flbTable);
             this.Controls.Add(this.panelControl1);
-            this.Controls.Add(this.dockPanel1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
@@ -305,7 +280,6 @@ namespace AMS.View
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
-            this.dockPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -334,7 +308,5 @@ namespace AMS.View
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.SimpleButton simpleButton7;
         private DevExpress.XtraBars.Docking.DockManager dockManager1;
-        private DevExpress.XtraBars.Docking.DockPanel dockPanel1;
-        private DevExpress.XtraBars.Docking.ControlContainer dockPanel1_Container;
     }
 }

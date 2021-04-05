@@ -37,6 +37,7 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +49,10 @@
     <Compile Include="DataHelepr.cs" />
     <Compile Include="Common\ConnectSQL.cs" />
     <Compile Include="Model\APM_RoomType.cs" />
+    <Compile Include="Model\ContractInfo.cs" />
+    <Compile Include="Model\ContractLog.cs" />
+    <Compile Include="Model\ContractRmCharge.cs" />
+    <Compile Include="Model\ContractTrn.cs" />
     <Compile Include="Model\GlobalParameter.cs" />
     <Compile Include="Model\NAResult.cs" />
     <Compile Include="Model\Room.cs" />

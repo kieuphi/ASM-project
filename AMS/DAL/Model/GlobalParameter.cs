@@ -12,6 +12,6 @@ namespace DAL.Model
     {
         public string ParaName { get; set; }
         public string Paravalue { get; set; }
-        public string Paravalue { get; set; }
+        public string ApartmentID { get; set; }
     }
 }

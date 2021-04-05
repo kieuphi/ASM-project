@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DataConnector">
+      <HintPath>..\..\lib\DataConnector.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -42,7 +45,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataHelepr.cs" />
     <Compile Include="Common\ConnectSQL.cs" />
+    <Compile Include="Model\APM_RoomType.cs" />
+    <Compile Include="Model\GlobalParameter.cs" />
+    <Compile Include="Model\NAResult.cs" />
+    <Compile Include="Model\Room.cs" />
+    <Compile Include="Model\RoomOOS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Room_DAL.cs" />
   </ItemGroup>

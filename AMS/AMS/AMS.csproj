@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>AMS</RootNamespace>
     <AssemblyName>AMS</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -104,17 +104,17 @@
     <Compile Include="View\Apartment\frmApartment_Insert.Designer.cs">
       <DependentUpon>frmApartment_Insert.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\frmBooking.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\frmBooking.Designer.cs">
-      <DependentUpon>frmBooking.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\frmLoadRoom.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\frmLoadRoom.Designer.cs">
       <DependentUpon>frmLoadRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmLoadRoomVer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmLoadRoomVer2.Designer.cs">
+      <DependentUpon>frmLoadRoomVer2.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Login\frmLogin.cs">
       <SubType>Form</SubType>
@@ -134,11 +134,11 @@
     <Compile Include="View\Service\frmHD.Designer.cs">
       <DependentUpon>frmHD.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Transaction\frmTransactionCode.cs">
-      <SubType>Form</SubType>
+    <Compile Include="View\UCRoom.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\Transaction\frmTransactionType.Designer.cs">
-      <DependentUpon>frmTransactionCode.cs</DependentUpon>
+    <Compile Include="View\UCRoom.Designer.cs">
+      <DependentUpon>UCRoom.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainVer2.resx">
       <DependentUpon>MainVer2.cs</DependentUpon>
@@ -160,11 +160,11 @@
     <EmbeddedResource Include="View\Apartment\frmApartment_Insert.resx">
       <DependentUpon>frmApartment_Insert.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\frmBooking.resx">
-      <DependentUpon>frmBooking.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\frmLoadRoom.resx">
       <DependentUpon>frmLoadRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmLoadRoomVer2.resx">
+      <DependentUpon>frmLoadRoomVer2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -175,8 +175,8 @@
     <EmbeddedResource Include="View\Service\frmHD.resx">
       <DependentUpon>frmHD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\Transaction\frmTransactionType.resx">
-      <DependentUpon>frmTransactionCode.cs</DependentUpon>
+    <EmbeddedResource Include="View\UCRoom.resx">
+      <DependentUpon>UCRoom.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

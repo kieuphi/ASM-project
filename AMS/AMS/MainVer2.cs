@@ -29,12 +29,12 @@ namespace AMS
         }
         private void MainVer2_Load(object sender, EventArgs e)
         {
-            Form frm = CheckForm(typeof(frmLoadRoom));
+            Form frm = CheckForm(typeof(frmLoadRoomVer2));
             if (frm != null)
                 frm.Activate();
             else
             {
-                frmLoadRoom fr = new frmLoadRoom();
+                frmLoadRoomVer2 fr = new frmLoadRoomVer2();
                 fr.MdiParent = this;
                 fr.Show();
             }

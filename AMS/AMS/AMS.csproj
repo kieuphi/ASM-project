@@ -104,6 +104,12 @@
     <Compile Include="View\Apartment\frmApartment_Insert.Designer.cs">
       <DependentUpon>frmApartment_Insert.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmBooking.Designer.cs">
+      <DependentUpon>frmBooking.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmLoadRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Apartment\frmApartment_Insert.resx">
       <DependentUpon>frmApartment_Insert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmBooking.resx">
+      <DependentUpon>frmBooking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmLoadRoom.resx">
       <DependentUpon>frmLoadRoom.cs</DependentUpon>

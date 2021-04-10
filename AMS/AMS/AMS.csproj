@@ -110,6 +110,12 @@
     <Compile Include="View\frmLoadRoom.Designer.cs">
       <DependentUpon>frmLoadRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmLoadRoomVer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmLoadRoomVer2.Designer.cs">
+      <DependentUpon>frmLoadRoomVer2.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Login\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,12 @@
     </Compile>
     <Compile Include="View\Service\frmHD.Designer.cs">
       <DependentUpon>frmHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UCRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UCRoom.Designer.cs">
+      <DependentUpon>UCRoom.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainVer2.resx">
       <DependentUpon>MainVer2.cs</DependentUpon>
@@ -151,6 +163,9 @@
     <EmbeddedResource Include="View\frmLoadRoom.resx">
       <DependentUpon>frmLoadRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\frmLoadRoomVer2.resx">
+      <DependentUpon>frmLoadRoomVer2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Service\frmHD.resx">
       <DependentUpon>frmHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UCRoom.resx">
+      <DependentUpon>UCRoom.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

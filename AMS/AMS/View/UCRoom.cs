@@ -80,7 +80,7 @@ namespace AMS.View
             {
                 case "1":
                     pnl_Back.BackColor = Color.FromArgb(135, 206, 250);
-                    pictureBox1.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\AMS\AMS\Resources\dirtyV2.png", true);
+                    pictureBox1.Image = Image.FromFile("..\\..\\..\\..\\Image\\dirtyV2.png", true);
                     pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
                     break;
                 case "2":

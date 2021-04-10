@@ -35,7 +35,7 @@ namespace DAL.Model
         public string DataInfo21 { get; set; }
         public string DataInfo22 { get; set; }
         public string DataInfo23 { get; set; }
-        public string DataInfo024{ get; set; }
+        public string DataInfo024 { get; set; }
         public string DataInfo25 { get; set; }
         public string DataInfo26 { get; set; }
         public string DataInfo27 { get; set; }
@@ -44,5 +44,36 @@ namespace DAL.Model
         public string DataInfo30 { get; set; }
         public string DataInfo31 { get; set; }
         public string DataInfo32 { get; set; }
+        public string DataInfo33 { get; set; }
+        public string DataInfo33 { get; set; }
+        public string DataInfo34 { get; set; }
+        public string DataInfo35 { get; set; }
+        public string DataInfo36 { get; set; }
+        public string DataInfo37 { get; set; }
+        public string DataInfo38 { get; set; }
+        public string DataInfo39 { get; set; }
+        public string DataInfo40 { get; set; }
+        public string DataInfo41 { get; set; }
+        public string DataInfo42 { get; set; }
+        public string DataInfo43 { get; set; }
+        public string DataInfo44 { get; set; }
+        public string DataInfo45 { get; set; }
+        public string DataInfo46 { get; set; }
+        public string DataInfo47 { get; set; }
+        public string DataInfo48 { get; set; }
+        public string DataInfo49 { get; set; }
+        public string DataInfo50 { get; set; }
+        public string DataInfo51 { get; set; }
+        public string DataInfo52 { get; set; }
+        public string DataInfo53 { get; set; }
+        public string DataInfo54 { get; set; }
+        public string DataInfo55 { get; set; }
+        public string DataInfo56 { get; set; }
+        public string DataInfo57 { get; set; }
+        public string DataInfo58 { get; set; }
+        public string DataInfo59 { get; set; }
+        public string DataInfo60 { get; set; }
+        public string DataInfo61 { get; set; }
+        public string DataInfo62 { get; set; }
     }
 }

@@ -20,20 +20,8 @@ namespace DAL
         public void Run()
         {
             database.OpenSharedConnection();
-            var a = Sql.Builder.From("GlobalParameter");
-            try
-            {
-                var asd = database.Fetch<GlobalParameter>(a);
-                GlobalParameter b = new GlobalParameter();
-                b.ID = 2;
-                b.ApartmentID = "sda";
-                b.ParaName = "adsd";
-                database.Insert("GlobalParameter", "ID", b);
-            }
-            catch(Exception ex)
-            {
-                
-            }
+            var a = Sql.Builder.From("APM_Room");
+            var asd = database.Fetch<Room>(a);
         }
     }
 }

@@ -78,9 +78,9 @@ namespace AMS.View
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 26);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 78);
+            this.pictureBox1.Size = new System.Drawing.Size(80, 78);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 

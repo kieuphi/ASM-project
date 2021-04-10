@@ -18,7 +18,7 @@ namespace AMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLoadRoomVer2());
+            Application.Run(new MainVer2());
         }
     }
 }

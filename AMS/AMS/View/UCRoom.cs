@@ -80,16 +80,19 @@ namespace AMS.View
             {
                 case "1":
                     pnl_Back.BackColor = Color.FromArgb(135, 206, 250);
-                    pictureBox1.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\Image\New folder\custom.png", true);
+                    pictureBox1.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\Image\customer.png", true);
+                    pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
                     break;
                 case "2":
-                    pnl_Back.BackColor = Color.FromArgb(70, 130, 170);
+                    pnl_Back.BackColor = Color.FromArgb(255, 255, 255);
+                    pictureBox2.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\AMS\AMS\Resources\ArrivalArrowV2_16x16.png", true);
                     break;
                 case "3":
                     pnl_Back.BackColor = Color.FromArgb(205, 92, 92);
                     break;
                 case "4":
                     pnl_Back.BackColor = Color.FromArgb(205, 92, 92);
+
                     break;
             }
         }

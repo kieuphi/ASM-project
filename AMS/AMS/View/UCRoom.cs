@@ -74,6 +74,7 @@ namespace AMS.View
                 UpdateStatus();
             }
         }
+    
         private void UpdateStatus()
         {
             switch (_status)

@@ -17,7 +17,8 @@ namespace AMS.View
         public frmLoadRoomVer2()
         {
             InitializeComponent();
-            load();
+            try { load(); }
+            catch { }
         }
         ConnectSQL DBHelper = new ConnectSQL();
         void load()

@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>AMS</RootNamespace>
     <AssemblyName>AMS</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -83,6 +83,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\dbConnect.cs" />
+    <Compile Include="Common\ImageStateHelper.cs" />
     <Compile Include="MainVer2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,11 +104,23 @@
     <Compile Include="View\Apartment\frmApartment_Insert.Designer.cs">
       <DependentUpon>frmApartment_Insert.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmBooking.Designer.cs">
+      <DependentUpon>frmBooking.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmLoadRoom.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\frmLoadRoom.Designer.cs">
       <DependentUpon>frmLoadRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmLoadRoomVer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmLoadRoomVer2.Designer.cs">
+      <DependentUpon>frmLoadRoomVer2.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Login\frmLogin.cs">
       <SubType>Form</SubType>
@@ -126,6 +139,18 @@
     </Compile>
     <Compile Include="View\Service\frmHD.Designer.cs">
       <DependentUpon>frmHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemAMS\frmConnectDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SystemAMS\frmConnectDB.Designer.cs">
+      <DependentUpon>frmConnectDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UCRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UCRoom.Designer.cs">
+      <DependentUpon>UCRoom.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainVer2.resx">
       <DependentUpon>MainVer2.cs</DependentUpon>
@@ -147,8 +172,14 @@
     <EmbeddedResource Include="View\Apartment\frmApartment_Insert.resx">
       <DependentUpon>frmApartment_Insert.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\frmBooking.resx">
+      <DependentUpon>frmBooking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmLoadRoom.resx">
       <DependentUpon>frmLoadRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmLoadRoomVer2.resx">
+      <DependentUpon>frmLoadRoomVer2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Login\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -158,6 +189,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Service\frmHD.resx">
       <DependentUpon>frmHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SystemAMS\frmConnectDB.resx">
+      <DependentUpon>frmConnectDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UCRoom.resx">
+      <DependentUpon>UCRoom.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -174,7 +211,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Main\" />
-    <Folder Include="View\System\" />
+    <Folder Include="View\Booking\" />
+    <Folder Include="View\RoomMap\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
@@ -195,6 +233,138 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrivalArrowV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrivalArrowV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrivalWalkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Birthday_HoneyMoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BirthDayV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BirthDayV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-inV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkinwalkinguestV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cleanV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConnectRoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConnectRoomSL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DepArrow_ArrivalV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DepArrowV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DepArrowV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DepartureWalkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirtyV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirtyV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExtraBedV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExtraBedV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groupbalanceV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groupinfoV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guestbalanceV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guestinfoV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\houseuseV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JoinBedV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LateCheckinV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LateCheckinV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-showV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomStatusV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S.RequestV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwaproomV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Top-Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TwoHeartsV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TwoHeartsV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk_in_guest_roomV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk_in_guest_roomV2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

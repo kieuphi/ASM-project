@@ -31,17 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DataConnector, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\DataConnector.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Data, Version=6.9.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.6.9.12\lib\net45\MySql.Data.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,17 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataHelepr.cs" />
+    <Compile Include="Common\AppSetting.cs" />
     <Compile Include="Common\ConnectSQL.cs" />
-    <Compile Include="Model\APM_RoomType.cs" />
-    <Compile Include="Model\ContractInfo.cs" />
-    <Compile Include="Model\ContractLog.cs" />
-    <Compile Include="Model\ContractRmCharge.cs" />
-    <Compile Include="Model\ContractTrn.cs" />
-    <Compile Include="Model\GlobalParameter.cs" />
-    <Compile Include="Model\NAResult.cs" />
-    <Compile Include="Model\Room.cs" />
-    <Compile Include="Model\RoomOOS.cs" />
+    <Compile Include="Common\SqlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Room_DAL.cs" />
   </ItemGroup>
@@ -69,10 +53,6 @@
       <Project>{b77485f0-ccf1-4f03-94af-2ff41728943a}</Project>
       <Name>VOBJ</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

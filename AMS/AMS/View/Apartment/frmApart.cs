@@ -23,5 +23,10 @@ namespace AMS.View.Apartment
             frmApartment_Insert f = new frmApartment_Insert();
                 f.ShowDialog();
         }
+
+        private void frmApartment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

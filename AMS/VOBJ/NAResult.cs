@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Model
+namespace VOBJ
 {
     [TableName("NAResult")]
     public class NAResult
@@ -35,7 +35,7 @@ namespace DAL.Model
         public string DataInfo21 { get; set; }
         public string DataInfo22 { get; set; }
         public string DataInfo23 { get; set; }
-        public string DataInfo024 { get; set; }
+        public string DataInfo24 { get; set; }
         public string DataInfo25 { get; set; }
         public string DataInfo26 { get; set; }
         public string DataInfo27 { get; set; }
@@ -44,7 +44,6 @@ namespace DAL.Model
         public string DataInfo30 { get; set; }
         public string DataInfo31 { get; set; }
         public string DataInfo32 { get; set; }
-        public string DataInfo33 { get; set; }
         public string DataInfo33 { get; set; }
         public string DataInfo34 { get; set; }
         public string DataInfo35 { get; set; }
@@ -75,5 +74,6 @@ namespace DAL.Model
         public string DataInfo60 { get; set; }
         public string DataInfo61 { get; set; }
         public string DataInfo62 { get; set; }
+        public string DataInfo63 { get; set; }
     }
 }

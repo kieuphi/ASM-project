@@ -1,7 +1,7 @@
 ﻿using DataConnector;
 using System;
 
-namespace DAL.Model
+namespace VOBJ
 {
     [TableName("APM_Room")]
     public class Room

@@ -1,6 +1,6 @@
 ﻿using DataConnector;
 
-namespace DAL.Model
+namespace VOBJ
 {
     [TableName("Sale_ContractLog")]
     public class ContractLog

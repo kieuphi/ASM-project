@@ -140,6 +140,12 @@
     <Compile Include="View\Service\frmHD.Designer.cs">
       <DependentUpon>frmHD.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\SystemAMS\frmConnectDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SystemAMS\frmConnectDB.Designer.cs">
+      <DependentUpon>frmConnectDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UCRoom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -184,6 +190,9 @@
     <EmbeddedResource Include="View\Service\frmHD.resx">
       <DependentUpon>frmHD.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\SystemAMS\frmConnectDB.resx">
+      <DependentUpon>frmConnectDB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\UCRoom.resx">
       <DependentUpon>UCRoom.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,7 +211,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Main\" />
-    <Folder Include="View\System\" />
+    <Folder Include="View\Booking\" />
+    <Folder Include="View\RoomMap\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">

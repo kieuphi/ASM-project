@@ -12,7 +12,7 @@ namespace DAL.Common
     public class ConnectSQL
     {
 
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ketnoi"].ToString());
+        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["AMS.Properties.Settings.Setting"].ToString());
 
 
         public void disconnect()

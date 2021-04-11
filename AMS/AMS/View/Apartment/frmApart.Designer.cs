@@ -200,7 +200,7 @@ namespace AMS.View.Apartment
             // 
             this.btnInsert.Caption = "Thêm";
             this.btnInsert.Id = 3;
-            this.btnInsert.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.btnInsert.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnInsert.ImageOptions.Image")));
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnInsert.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnInsert_ItemClick);
@@ -623,6 +623,7 @@ namespace AMS.View.Apartment
             this.Controls.Add(this.barDockControlTop);
             this.Name = "frmApartment";
             this.Text = "DANH SÁCH CĂN HỘ";
+            this.Load += new System.EventHandler(this.frmApartment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRibbonSearchEdit1)).EndInit();

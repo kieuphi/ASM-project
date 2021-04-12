@@ -74,9 +74,7 @@ namespace AMS.View
                 UpdateStatus();
             }
         }
-<<<<<<< HEAD
-    
-=======
+
         public PictureBox pic
         {
             get
@@ -84,14 +82,14 @@ namespace AMS.View
                 return background;
             }
         }
->>>>>>> 179521155c4722d5265423997b0a5aa083b40135
+
         private void UpdateStatus()
         {
             switch (_status)
             {
                 case "1":
                     pnl_Back.BackColor = Color.FromArgb(135, 206, 250);
-<<<<<<< HEAD
+
                     pictureBox1.Image = Image.FromFile("..\\..\\..\\..\\Image\\dirtyV2.png", true);
                     pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
                     break;
@@ -99,14 +97,8 @@ namespace AMS.View
                     pnl_Back.BackColor = Color.FromArgb(255, 255, 255);
                     pictureBox2.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\AMS\AMS\Resources\ArrivalArrowV2.png", true);
                     pictureBox3.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\AMS\AMS\Resources\DepArrowV2.png", true);
-=======
+                    break;
 
-                    break;
-                case "2":
-                    pnl_Back.BackColor = Color.FromArgb(255, 255, 255);
-                   // pictureBox2.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\AMS\AMS\Resources\ArrivalArrowV2_16x16.png", true);
->>>>>>> 179521155c4722d5265423997b0a5aa083b40135
-                    break;
                 case "3":
                     pnl_Back.BackColor = Color.FromArgb(255, 255, 255);
                     pictureBox1.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\AMS\AMS\Resources\dirtyV2.png", true);

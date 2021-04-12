@@ -95,7 +95,6 @@ namespace AMS.View
             this.lbl_RoomUsers.TabIndex = 0;
             this.lbl_RoomUsers.Text = "label1";
             // 
-<<<<<<< HEAD
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -106,9 +105,9 @@ namespace AMS.View
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
-=======
+
             // lbl_RoomNum
->>>>>>> 179521155c4722d5265423997b0a5aa083b40135
+
             // 
             this.lbl_RoomNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_RoomNum.AutoSize = true;

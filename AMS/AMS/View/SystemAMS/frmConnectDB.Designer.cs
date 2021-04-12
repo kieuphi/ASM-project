@@ -62,6 +62,7 @@ namespace AMS.View.SystemAMS
             // 
             // txtPass
             // 
+            this.txtPass.EditValue = "admin@123!@#";
             this.txtPass.Location = new System.Drawing.Point(93, 95);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(186, 20);
@@ -129,7 +130,7 @@ namespace AMS.View.SystemAMS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(315, 156);
+            this.ClientSize = new System.Drawing.Size(321, 162);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);

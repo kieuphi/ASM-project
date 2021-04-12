@@ -119,7 +119,7 @@ namespace AMS.View
             this.xtraTabPage1.Controls.Add(this.groupControl3);
             this.xtraTabPage1.Controls.Add(this.groupControl2);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1061, 457);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1057, 462);
             this.xtraTabPage1.Text = "Thông tin đặt phòng";
             // 
             // groupControl3
@@ -279,7 +279,7 @@ namespace AMS.View
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1074, 580);
+            this.ClientSize = new System.Drawing.Size(1080, 586);
             this.Controls.Add(this.groupControl1);
             this.Name = "frmBooking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

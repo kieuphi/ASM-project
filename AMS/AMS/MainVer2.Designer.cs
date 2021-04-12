@@ -55,7 +55,10 @@ namespace AMS
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+<<<<<<< HEAD
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+=======
+>>>>>>> 179521155c4722d5265423997b0a5aa083b40135
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -224,15 +227,19 @@ namespace AMS
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
+<<<<<<< HEAD
             this.barDockControlTop.Size = new System.Drawing.Size(1152, 68);
+=======
+            this.barDockControlTop.Size = new System.Drawing.Size(1158, 68);
+>>>>>>> 179521155c4722d5265423997b0a5aa083b40135
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 516);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 522);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1152, 23);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1158, 23);
             // 
             // barDockControlLeft
             // 
@@ -240,15 +247,25 @@ namespace AMS
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 68);
             this.barDockControlLeft.Manager = this.barManager1;
+<<<<<<< HEAD
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 448);
+=======
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 454);
+>>>>>>> 179521155c4722d5265423997b0a5aa083b40135
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+<<<<<<< HEAD
             this.barDockControlRight.Location = new System.Drawing.Point(1152, 68);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 448);
+=======
+            this.barDockControlRight.Location = new System.Drawing.Point(1158, 68);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 454);
+>>>>>>> 179521155c4722d5265423997b0a5aa083b40135
             // 
             // barButtonItem1
             // 
@@ -269,6 +286,7 @@ namespace AMS
             this.barButtonItem5.Name = "barButtonItem5";
             // 
             // xtraTabbedMdiManager1
+<<<<<<< HEAD
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
             // 
@@ -278,12 +296,16 @@ namespace AMS
             this.barButtonItem10.Id = 15;
             this.barButtonItem10.Name = "barButtonItem10";
             this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem10_ItemClick);
+=======
+            // 
+            this.xtraTabbedMdiManager1.MdiParent = this;
+>>>>>>> 179521155c4722d5265423997b0a5aa083b40135
             // 
             // MainVer2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1152, 539);
+            this.ClientSize = new System.Drawing.Size(1158, 545);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);

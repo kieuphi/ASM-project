@@ -38,6 +38,7 @@ namespace AMS
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.barSubItem2 = new DevExpress.XtraBars.BarSubItem();
@@ -55,10 +56,6 @@ namespace AMS
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-
-            this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
-
-
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -125,6 +122,7 @@ namespace AMS
             this.barButtonItem6.Id = 11;
             this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
             this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
             // 
             // barButtonItem7
             // 
@@ -146,6 +144,13 @@ namespace AMS
             this.barButtonItem9.Id = 14;
             this.barButtonItem9.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem9.ImageOptions.Image")));
             this.barButtonItem9.Name = "barButtonItem9";
+            // 
+            // barButtonItem10
+            // 
+            this.barButtonItem10.Caption = "HK";
+            this.barButtonItem10.Id = 15;
+            this.barButtonItem10.Name = "barButtonItem10";
+            this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem10_ItemClick);
             // 
             // bar2
             // 
@@ -227,11 +232,7 @@ namespace AMS
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-
-            this.barDockControlTop.Size = new System.Drawing.Size(1152, 68);
-
             this.barDockControlTop.Size = new System.Drawing.Size(1158, 68);
-
             // 
             // barDockControlBottom
             // 
@@ -247,25 +248,15 @@ namespace AMS
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 68);
             this.barDockControlLeft.Manager = this.barManager1;
-
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 448);
-
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 454);
-
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-
-            this.barDockControlRight.Location = new System.Drawing.Point(1152, 68);
-            this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 448);
-
             this.barDockControlRight.Location = new System.Drawing.Point(1158, 68);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 454);
-
             // 
             // barButtonItem1
             // 
@@ -286,20 +277,8 @@ namespace AMS
             this.barButtonItem5.Name = "barButtonItem5";
             // 
             // xtraTabbedMdiManager1
-
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // barButtonItem10
-            // 
-            this.barButtonItem10.Caption = "HK";
-            this.barButtonItem10.Id = 15;
-            this.barButtonItem10.Name = "barButtonItem10";
-            this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem10_ItemClick);
-
-            // 
-            this.xtraTabbedMdiManager1.MdiParent = this;
-
             // 
             // MainVer2
             // 

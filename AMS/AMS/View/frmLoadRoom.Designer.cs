@@ -71,7 +71,7 @@ namespace AMS.View
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1241, 43);
+            this.panelControl1.Size = new System.Drawing.Size(1247, 43);
             this.panelControl1.TabIndex = 1;
             // 
             // searchControl1
@@ -108,15 +108,15 @@ namespace AMS.View
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1241, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(1247, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 676);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 682);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1241, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1247, 0);
             // 
             // barDockControlLeft
             // 
@@ -124,15 +124,15 @@ namespace AMS.View
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 676);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 682);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1241, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(1247, 0);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 676);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 682);
             // 
             // dockManager1
             // 
@@ -258,14 +258,14 @@ namespace AMS.View
             this.flbTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flbTable.Location = new System.Drawing.Point(0, 43);
             this.flbTable.Name = "flbTable";
-            this.flbTable.Size = new System.Drawing.Size(1241, 633);
+            this.flbTable.Size = new System.Drawing.Size(1247, 639);
             this.flbTable.TabIndex = 7;
             // 
             // frmLoadRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1241, 676);
+            this.ClientSize = new System.Drawing.Size(1247, 682);
             this.Controls.Add(this.flbTable);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.barDockControlLeft);

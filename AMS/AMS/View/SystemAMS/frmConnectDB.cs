@@ -25,7 +25,7 @@ namespace AMS.View.SystemAMS
             comboBox1.Items.Add("(local)");
             comboBox1.Items.Add(@".\SQLEXPRESS");
             comboBox1.Items.Add(string.Format(@"{0}\SQLEXPRESS", Environment.MachineName));
-            comboBox1.SelectedIndex = 3;
+            comboBox1.SelectedIndex = 1;
 
             btnSave.Enabled = false;
         }

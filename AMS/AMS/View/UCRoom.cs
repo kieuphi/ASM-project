@@ -41,7 +41,7 @@ namespace AMS.View
             var width = pnl_Back.Width - lbl_RoomNum.Width;
             if (width < 0)
                 width = 0;
-            lbl_RoomNum.Location = new Point(width / 2, lbl_RoomNum.Location.Y);
+            lbl_RoomNum.Location = new Point(width / 3, lbl_RoomNum.Location.Y);
         }
         public List<User> InUsers
         {
@@ -63,7 +63,7 @@ namespace AMS.View
             var width = pnl_Back.Width - lbl_RoomUsers.Width;
             if (width < 0)
                 width = 0;
-            lbl_RoomUsers.Location = new Point(width / 2, lbl_RoomUsers.Location.Y);
+            lbl_RoomUsers.Location = new Point(width / 3, lbl_RoomUsers.Location.Y);
         }
         public string Status
         {
@@ -74,24 +74,40 @@ namespace AMS.View
                 UpdateStatus();
             }
         }
+
+        public PictureBox pic
+        {
+            get
+            {
+                return background;
+            }
+        }
+
         private void UpdateStatus()
         {
             switch (_status)
             {
                 case "1":
                     pnl_Back.BackColor = Color.FromArgb(135, 206, 250);
-                    pictureBox1.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\Image\customer.png", true);
+
+                    pictureBox1.Image = Image.FromFile("..\\..\\..\\..\\Image\\dirtyV2.png", true);
                     pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
                     break;
                 case "2":
                     pnl_Back.BackColor = Color.FromArgb(255, 255, 255);
-                    pictureBox2.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\AMS\AMS\Resources\ArrivalArrowV2_16x16.png", true);
+                    pictureBox2.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\AMS\AMS\Resources\ArrivalArrowV2.png", true);
+                    pictureBox3.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\AMS\AMS\Resources\DepArrowV2.png", true);
                     break;
+
                 case "3":
-                    pnl_Back.BackColor = Color.FromArgb(205, 92, 92);
+                    pnl_Back.BackColor = Color.FromArgb(255, 255, 255);
+                    pictureBox1.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\AMS\AMS\Resources\dirtyV2.png", true);
+                    pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
                     break;
                 case "4":
-                    pnl_Back.BackColor = Color.FromArgb(205, 92, 92);
+                    pnl_Back.BackColor = Color.FromArgb(255, 255, 255);
+                    pictureBox1.Image = Image.FromFile(@"D:\SourceTTL\ASM-project\AMS\AMS\Resources\ExtraBedV2.png", true);
+                    pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
 
                     break;
             }

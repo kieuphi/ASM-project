@@ -1,4 +1,6 @@
 ﻿using AMS.View;
+using AMS.View.HouseKeeping;
+using AMS.View.Reservation;
 using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
@@ -38,6 +40,21 @@ namespace AMS
                 fr.MdiParent = this;
                 fr.Show();
             }
+        }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+            frmPostHouseKeeping fr = new frmPostHouseKeeping();
+                fr.Show();
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmBookingInfo fr = new frmBookingInfo();
+            fr.MdiParent = this;
+            fr.Show();
+        
         }
     }
 }

@@ -62,7 +62,7 @@ namespace AMS.View.SystemAMS
             // 
             // txtPass
             // 
-            this.txtPass.EditValue = "admin@123!@#";
+            this.txtPass.EditValue = "";
             this.txtPass.Location = new System.Drawing.Point(93, 95);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(186, 20);

@@ -19,7 +19,7 @@ namespace AMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmConnectDB());
+            Application.Run(new Splash());
         }
     }
 }

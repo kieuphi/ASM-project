@@ -1,7 +1,7 @@
 ﻿
-namespace AMS.View
+namespace AMS.View.RoomMapv2
 {
-    partial class UCRoom
+    partial class RoomUC
     {
         /// <summary> 
         /// Required designer variable.
@@ -51,15 +51,16 @@ namespace AMS.View
             this.pnl_Back.Controls.Add(this.lbl_RoomUsers);
             this.pnl_Back.Controls.Add(this.lbl_RoomNum);
             this.pnl_Back.Controls.Add(this.background);
+            this.pnl_Back.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Back.Location = new System.Drawing.Point(0, 0);
             this.pnl_Back.Name = "pnl_Back";
-            this.pnl_Back.Size = new System.Drawing.Size(105, 96);
-            this.pnl_Back.TabIndex = 0;
+            this.pnl_Back.Size = new System.Drawing.Size(109, 103);
+            this.pnl_Back.TabIndex = 1;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox3.Location = new System.Drawing.Point(68, 46);
+            this.pictureBox3.Location = new System.Drawing.Point(70, 49);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 29);
             this.pictureBox3.TabIndex = 2;
@@ -68,7 +69,7 @@ namespace AMS.View
             // pictureBox2
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Location = new System.Drawing.Point(14, 22);
+            this.pictureBox2.Location = new System.Drawing.Point(16, 25);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(28, 24);
             this.pictureBox2.TabIndex = 2;
@@ -77,7 +78,7 @@ namespace AMS.View
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(31, 29);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(54, 49);
             this.pictureBox1.TabIndex = 1;
@@ -88,7 +89,7 @@ namespace AMS.View
             this.lbl_RoomUsers.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_RoomUsers.AutoSize = true;
             this.lbl_RoomUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_RoomUsers.Location = new System.Drawing.Point(32, 78);
+            this.lbl_RoomUsers.Location = new System.Drawing.Point(34, 81);
             this.lbl_RoomUsers.Name = "lbl_RoomUsers";
             this.lbl_RoomUsers.Size = new System.Drawing.Size(41, 13);
             this.lbl_RoomUsers.TabIndex = 0;
@@ -98,7 +99,7 @@ namespace AMS.View
             // 
             this.lbl_RoomNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_RoomNum.AutoSize = true;
-            this.lbl_RoomNum.Location = new System.Drawing.Point(33, 6);
+            this.lbl_RoomNum.Location = new System.Drawing.Point(35, 9);
             this.lbl_RoomNum.Name = "lbl_RoomNum";
             this.lbl_RoomNum.Size = new System.Drawing.Size(35, 13);
             this.lbl_RoomNum.TabIndex = 0;
@@ -110,18 +111,17 @@ namespace AMS.View
             this.background.ErrorImage = global::AMS.Properties.Resources.ConnectRoomSL;
             this.background.Location = new System.Drawing.Point(0, 0);
             this.background.Name = "background";
-            this.background.Size = new System.Drawing.Size(105, 96);
+            this.background.Size = new System.Drawing.Size(109, 103);
             this.background.TabIndex = 3;
             this.background.TabStop = false;
             // 
-            // UCRoom
+            // RoomUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.pnl_Back);
-            this.Name = "UCRoom";
-            this.Size = new System.Drawing.Size(105, 96);
+            this.Name = "RoomUC";
+            this.Size = new System.Drawing.Size(109, 103);
             this.pnl_Back.ResumeLayout(false);
             this.pnl_Back.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

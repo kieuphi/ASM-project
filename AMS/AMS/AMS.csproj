@@ -146,6 +146,13 @@
     <Compile Include="View\Reservation\frmBookingInfo.Designer.cs">
       <DependentUpon>frmBookingInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\RoomMapv2\RoomUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\RoomMapv2\RoomUC.Designer.cs">
+      <DependentUpon>RoomUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoomMapv2\SuspendUpdate.cs" />
     <Compile Include="View\Service\frmHD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +164,12 @@
     </Compile>
     <Compile Include="View\SystemAMS\frmConnectDB.Designer.cs">
       <DependentUpon>frmConnectDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SystemAMS\Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SystemAMS\Splash.Designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UCRoom.cs">
       <SubType>UserControl</SubType>
@@ -205,11 +218,17 @@
     <EmbeddedResource Include="View\Reservation\frmBookingInfo.resx">
       <DependentUpon>frmBookingInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\RoomMapv2\RoomUC.resx">
+      <DependentUpon>RoomUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Service\frmHD.resx">
       <DependentUpon>frmHD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\SystemAMS\frmConnectDB.resx">
       <DependentUpon>frmConnectDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SystemAMS\Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UCRoom.resx">
       <DependentUpon>UCRoom.cs</DependentUpon>
@@ -382,6 +401,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Splash.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

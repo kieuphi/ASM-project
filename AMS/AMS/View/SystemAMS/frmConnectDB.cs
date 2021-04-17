@@ -28,6 +28,8 @@ namespace AMS.View.SystemAMS
             comboBox1.SelectedIndex = 1;
 
             btnSave.Enabled = false;
+
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -42,7 +44,7 @@ namespace AMS.View.SystemAMS
                     setting.SaveConnectionString("AMS.Properties.Settings.Setting", connectionString);
                     XtraMessageBox.Show("Bố mày đã lưu rồi nhé con chó !");
 
-                    MainVer2 f = new MainVer2();
+                    Splash f = new Splash();
                     f.Show();
                     this.Hide();
                 }

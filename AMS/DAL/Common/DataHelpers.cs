@@ -1,4 +1,6 @@
 ﻿using DataConnector;
+using System.Collections.Generic;
+using VOBJ;
 
 namespace DAL.Common
 {
@@ -10,6 +12,24 @@ namespace DAL.Common
         public DataHelpers()
         {
             Database = new Database(ConnectionString, "SqlServer");
+        }
+
+        public List<ServiceGroup> GetAllServiceGroup()
+        {
+            Sql sql = Sql.Builder.From("Sale_ServiceGroup");
+            return Database.Fetch<ServiceGroup>(sql);
+        }
+
+        public List<ServicePosted> GetAllServicePosted()
+        {
+            Sql sql = Sql.Builder.From("Sale_ServicePosted");
+            return Database.Fetch<ServicePosted>(sql);
+        }
+
+        public List<ServiceList> GetAllServiceList()
+        {
+            Sql sql = Sql.Builder.From("Sale_ServiceList");
+            return Database.Fetch<ServiceList>(sql);
         }
     }
 }

@@ -47,6 +47,7 @@ namespace AMS
             this.barSubItem4 = new DevExpress.XtraBars.BarSubItem();
             this.barSubItem5 = new DevExpress.XtraBars.BarSubItem();
             this.barSubItem6 = new DevExpress.XtraBars.BarSubItem();
+            this.skinDropDownButtonItem1 = new DevExpress.XtraBars.SkinDropDownButtonItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -87,9 +88,10 @@ namespace AMS
             this.barButtonItem7,
             this.barButtonItem8,
             this.barButtonItem9,
-            this.barButtonItem10});
+            this.barButtonItem10,
+            this.skinDropDownButtonItem1});
             this.barManager1.MainMenu = this.bar2;
-            this.barManager1.MaxItemId = 16;
+            this.barManager1.MaxItemId = 17;
             this.barManager1.StatusBar = this.bar3;
             // 
             // bar1
@@ -104,7 +106,7 @@ namespace AMS
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem7, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem8, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem9, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem10)});
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem10, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar1.Text = "Tools";
             // 
             // barButtonItem3
@@ -147,8 +149,9 @@ namespace AMS
             // 
             // barButtonItem10
             // 
-            this.barButtonItem10.Caption = "HK";
+            this.barButtonItem10.Caption = "Buồng phòng";
             this.barButtonItem10.Id = 15;
+            this.barButtonItem10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem10.ImageOptions.Image")));
             this.barButtonItem10.Name = "barButtonItem10";
             this.barButtonItem10.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem10_ItemClick);
             // 
@@ -213,6 +216,11 @@ namespace AMS
             this.barSubItem6.Caption = "Báo cáo";
             this.barSubItem6.Id = 10;
             this.barSubItem6.Name = "barSubItem6";
+            // 
+            // skinDropDownButtonItem1
+            // 
+            this.skinDropDownButtonItem1.Id = 16;
+            this.skinDropDownButtonItem1.Name = "skinDropDownButtonItem1";
             // 
             // bar3
             // 
@@ -328,5 +336,6 @@ namespace AMS
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
+        private DevExpress.XtraBars.SkinDropDownButtonItem skinDropDownButtonItem1;
     }
 }

@@ -30,18 +30,24 @@ namespace AMS.View
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.numRow = new DevExpress.XtraEditors.SpinEdit();
+            this.numCol = new DevExpress.XtraEditors.SpinEdit();
             this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tblLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numRow.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCol.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.numRow);
+            this.panel1.Controls.Add(this.numCol);
             this.panel1.Controls.Add(this.searchControl1);
             this.panel1.Controls.Add(this.simpleButton3);
             this.panel1.Controls.Add(this.simpleButton6);
@@ -52,6 +58,34 @@ namespace AMS.View
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1030, 48);
             this.panel1.TabIndex = 1;
+            // 
+            // numRow
+            // 
+            this.numRow.EditValue = new decimal(new int[] {
+            9,
+            0,
+            0,
+            0});
+            this.numRow.Location = new System.Drawing.Point(854, 17);
+            this.numRow.Name = "numRow";
+            this.numRow.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.numRow.Size = new System.Drawing.Size(100, 20);
+            this.numRow.TabIndex = 7;
+            // 
+            // numCol
+            // 
+            this.numCol.EditValue = new decimal(new int[] {
+            8,
+            0,
+            0,
+            0});
+            this.numCol.Location = new System.Drawing.Point(731, 17);
+            this.numCol.Name = "numCol";
+            this.numCol.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.numCol.Size = new System.Drawing.Size(100, 20);
+            this.numCol.TabIndex = 7;
             // 
             // searchControl1
             // 
@@ -102,24 +136,32 @@ namespace AMS.View
             this.simpleButton7.TabIndex = 5;
             this.simpleButton7.Text = "Trạng thái";
             // 
-            // flowLayoutPanel1
+            // tblLayoutPanel
             // 
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 48);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1030, 579);
-            this.flowLayoutPanel1.TabIndex = 2;
+            this.tblLayoutPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tblLayoutPanel.ColumnCount = 1;
+            this.tblLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblLayoutPanel.Location = new System.Drawing.Point(0, 48);
+            this.tblLayoutPanel.Name = "tblLayoutPanel";
+            this.tblLayoutPanel.RowCount = 1;
+            this.tblLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tblLayoutPanel.Size = new System.Drawing.Size(1030, 579);
+            this.tblLayoutPanel.TabIndex = 2;
             // 
             // frmLoadRoomVer2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 627);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.tblLayoutPanel);
             this.Controls.Add(this.panel1);
             this.Name = "frmLoadRoomVer2";
             this.Text = "frmLoadRoomVer2";
+            this.Load += new System.EventHandler(this.frmLoadRoomVer2_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.numRow.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCol.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).EndInit();
             this.ResumeLayout(false);
 
@@ -135,6 +177,8 @@ namespace AMS.View
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraEditors.SimpleButton simpleButton7;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tblLayoutPanel;
+        private DevExpress.XtraEditors.SpinEdit numRow;
+        private DevExpress.XtraEditors.SpinEdit numCol;
     }
 }

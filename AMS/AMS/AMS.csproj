@@ -146,6 +146,13 @@
     <Compile Include="View\Reservation\frmBookingInfo.Designer.cs">
       <DependentUpon>frmBookingInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\RoomMapv2\RoomUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\RoomMapv2\RoomUC.Designer.cs">
+      <DependentUpon>RoomUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoomMapv2\SuspendUpdate.cs" />
     <Compile Include="View\Service\frmHD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Reservation\frmBookingInfo.resx">
       <DependentUpon>frmBookingInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RoomMapv2\RoomUC.resx">
+      <DependentUpon>RoomUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Service\frmHD.resx">
       <DependentUpon>frmHD.cs</DependentUpon>

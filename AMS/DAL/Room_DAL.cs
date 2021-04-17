@@ -30,7 +30,7 @@ namespace DAL
         {
             List<Room_OBJ> ptnlist = new List<Room_OBJ>();
 
-            DataTable data = db.GetData("select RoomCode,RoomName,Floor from APM_Room where Roomcode not like N'%Sys%'" + id);
+            DataTable data = db.GetData("select RoomCode,RoomName,Floor,RowX,ColY from APM_Room where RoomCode not like N'%Sys%'" + id);
 
             foreach (DataRow item in data.Rows)
             {

@@ -9,24 +9,28 @@ namespace VOBJ
 {
     public class Room_OBJ
     {
-        public Room_OBJ(string roomcode, string roomname, string floor)
+        public Room_OBJ(int roomcode, string roomname, string floor, string rowx, string coly)
         {
             this.RoomCode = roomcode;
             this.RoomName = roomname;
             this.Floor = floor;
+            this.RowX = rowx;
+            this.ColY = coly;
         }
 
         public Room_OBJ(DataRow row)
         {
-            this.RoomCode = row["RoomCode"].ToString();
+            this.RoomCode = Convert.ToInt32(row["RoomCode"]);
             this.RoomName = row["RoomName"].ToString();
             this.Floor = row["Floor"].ToString();
+            this.RowX = row["RowX"].ToString();
+            this.ColY = row["ColY"].ToString();
 
         }
 
 
-        private string roomcode;
-        public string RoomCode
+        private int roomcode;
+        public int RoomCode
         {
             get { return roomcode; }
             set { roomcode = value; }
@@ -43,6 +47,19 @@ namespace VOBJ
         {
             get { return floor; }
             set { floor = value; }
+        }
+        private string rowX;
+        public string RowX
+        {
+            get { return rowX; }
+            set { rowX = value; }
+        }
+
+        private string colY;
+        public string ColY
+        {
+            get { return colY; }
+            set { colY = value; }
         }
     }
 }

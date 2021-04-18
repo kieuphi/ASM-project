@@ -33,7 +33,7 @@ namespace AMS
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainVer2));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnRoomPlan = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
@@ -47,7 +47,6 @@ namespace AMS
             this.barSubItem4 = new DevExpress.XtraBars.BarSubItem();
             this.barSubItem5 = new DevExpress.XtraBars.BarSubItem();
             this.barSubItem6 = new DevExpress.XtraBars.BarSubItem();
-            this.skinDropDownButtonItem1 = new DevExpress.XtraBars.SkinDropDownButtonItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -56,7 +55,9 @@ namespace AMS
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.skinDropDownButtonItem1 = new DevExpress.XtraBars.SkinDropDownButtonItem();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -77,7 +78,7 @@ namespace AMS
             this.barButtonItem1,
             this.barSubItem2,
             this.barButtonItem2,
-            this.barButtonItem3,
+            this.btnRoomPlan,
             this.barButtonItem4,
             this.barButtonItem5,
             this.barSubItem3,
@@ -89,9 +90,10 @@ namespace AMS
             this.barButtonItem8,
             this.barButtonItem9,
             this.barButtonItem10,
-            this.skinDropDownButtonItem1});
+            this.skinDropDownButtonItem1,
+            this.skinBarSubItem1});
             this.barManager1.MainMenu = this.bar2;
-            this.barManager1.MaxItemId = 17;
+            this.barManager1.MaxItemId = 18;
             this.barManager1.StatusBar = this.bar3;
             // 
             // bar1
@@ -101,7 +103,7 @@ namespace AMS
             this.bar1.DockRow = 1;
             this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem3, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnRoomPlan, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem6, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem7, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem8, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
@@ -109,14 +111,15 @@ namespace AMS
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem10, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar1.Text = "Tools";
             // 
-            // barButtonItem3
+            // btnRoomPlan
             // 
-            this.barButtonItem3.Caption = "Khách hàng";
-            this.barButtonItem3.Id = 4;
-            this.barButtonItem3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.barButtonItem3.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
-            this.barButtonItem3.ImageOptions.SvgImageSize = new System.Drawing.Size(10, 10);
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.btnRoomPlan.Caption = "Room Plan";
+            this.btnRoomPlan.Id = 4;
+            this.btnRoomPlan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRoomPlan.ImageOptions.Image")));
+            this.btnRoomPlan.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnRoomPlan.ImageOptions.LargeImage")));
+            this.btnRoomPlan.ImageOptions.SvgImageSize = new System.Drawing.Size(10, 10);
+            this.btnRoomPlan.Name = "btnRoomPlan";
+            this.btnRoomPlan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRoomPlan_ItemClick);
             // 
             // barButtonItem6
             // 
@@ -168,7 +171,8 @@ namespace AMS
             new DevExpress.XtraBars.LinkPersistInfo(this.barSubItem3),
             new DevExpress.XtraBars.LinkPersistInfo(this.barSubItem4),
             new DevExpress.XtraBars.LinkPersistInfo(this.barSubItem5),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barSubItem6)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.barSubItem6),
+            new DevExpress.XtraBars.LinkPersistInfo(this.skinBarSubItem1)});
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
             this.bar2.Text = "Main menu";
@@ -216,11 +220,6 @@ namespace AMS
             this.barSubItem6.Caption = "Báo cáo";
             this.barSubItem6.Id = 10;
             this.barSubItem6.Name = "barSubItem6";
-            // 
-            // skinDropDownButtonItem1
-            // 
-            this.skinDropDownButtonItem1.Id = 16;
-            this.skinDropDownButtonItem1.Name = "skinDropDownButtonItem1";
             // 
             // bar3
             // 
@@ -284,9 +283,20 @@ namespace AMS
             this.barButtonItem5.Id = 6;
             this.barButtonItem5.Name = "barButtonItem5";
             // 
+            // skinDropDownButtonItem1
+            // 
+            this.skinDropDownButtonItem1.Id = 16;
+            this.skinDropDownButtonItem1.Name = "skinDropDownButtonItem1";
+            // 
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // skinBarSubItem1
+            // 
+            this.skinBarSubItem1.Caption = "skinBarSubItem1";
+            this.skinBarSubItem1.Id = 17;
+            this.skinBarSubItem1.Name = "skinBarSubItem1";
             // 
             // MainVer2
             // 
@@ -313,7 +323,7 @@ namespace AMS
 
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.BarButtonItem btnRoomPlan;
         private DevExpress.XtraBars.Bar bar2;
         private DevExpress.XtraBars.BarSubItem barSubItem1;
         private DevExpress.XtraBars.BarSubItem barSubItem2;
@@ -337,5 +347,6 @@ namespace AMS
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem10;
         private DevExpress.XtraBars.SkinDropDownButtonItem skinDropDownButtonItem1;
+        private DevExpress.XtraBars.SkinBarSubItem skinBarSubItem1;
     }
 }

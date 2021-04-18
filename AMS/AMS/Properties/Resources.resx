@@ -130,8 +130,8 @@
   <data name="BirthDayV2_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BirthDayV2_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DepartureWalkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DepartureWalkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="no_showV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no-showV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="no_data" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\no-data.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,26 +148,20 @@
   <data name="JoinBedV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\JoinBedV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="S_RequestV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\S.RequestV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="no_showV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\no-showV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="broom_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\broom_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dirtyV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dirtyV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Splash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ConnectRoomSL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ConnectRoomSL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="walk_in_guest_roomV2_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\walk_in_guest_roomV2_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="RoomStatusV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RoomStatusV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ArrivalArrowV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ArrivalArrowV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DepArrowV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DepArrowV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,17 +169,17 @@
   <data name="ArrivalArrowV2_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ArrivalArrowV2_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ooo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ooo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ExtraBedV2_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ExtraBedV2_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="broom_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\broom_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="S_RequestV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S.RequestV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DepArrow_ArrivalV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DepArrow_ArrivalV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DepArrowV2_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DepArrowV2_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="broom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\broom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,6 +199,9 @@
   <data name="ArrivalWalkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ArrivalWalkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="check_inV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check-inV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="groupbalanceV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\groupbalanceV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,11 +211,14 @@
   <data name="TwoHeartsV2_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TwoHeartsV2_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BirthDayV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BirthDayV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ArrivalArrowV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ArrivalArrowV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ooo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ooo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DepartureWalkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DepartureWalkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="walk_in_guest_roomV2_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\walk_in_guest_roomV2_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LateCheckinV2_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LateCheckinV2_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,8 +229,8 @@
   <data name="TwoHeartsV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TwoHeartsV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="check_inV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\check-inV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DepArrowV2_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DepArrowV2_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Top_Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Top-Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -256,7 +256,10 @@
   <data name="dirtyV2_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dirtyV2_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Splash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BirthDayV2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BirthDayV2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right_96px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\right_96px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

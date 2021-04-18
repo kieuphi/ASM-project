@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AMS.View;
 using AMS.View.Login;
+using AMS.View.RoomMapv2;
 using AMS.View.SystemAMS;
 
 namespace AMS
@@ -19,7 +20,7 @@ namespace AMS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Splash());
+            Application.Run(new MainVer2());
         }
     }
 }

@@ -30,6 +30,7 @@ namespace AMS.View.Login
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.btnLogin = new DevExpress.XtraEditors.SimpleButton();
@@ -48,6 +49,10 @@ namespace AMS.View.Login
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.tileControl1 = new DevExpress.XtraEditors.TileControl();
+            this.tileGroup2 = new DevExpress.XtraEditors.TileGroup();
+            this.tileItem1 = new DevExpress.XtraEditors.TileItem();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
@@ -74,11 +79,13 @@ namespace AMS.View.Login
             // 
             // btnLogin
             // 
-            this.btnLogin.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.btnLogin.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnLogin.Appearance.Font = new System.Drawing.Font("Tahoma", 15F);
             this.btnLogin.Appearance.Options.UseBackColor = true;
-            this.btnLogin.Location = new System.Drawing.Point(98, 146);
+            this.btnLogin.Appearance.Options.UseFont = true;
+            this.btnLogin.Location = new System.Drawing.Point(31, 146);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(91, 29);
+            this.btnLogin.Size = new System.Drawing.Size(136, 66);
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -179,15 +186,15 @@ namespace AMS.View.Login
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(435, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(997, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 313);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 548);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(435, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(997, 0);
             // 
             // barDockControlLeft
             // 
@@ -195,15 +202,15 @@ namespace AMS.View.Login
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 313);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 548);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(435, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(997, 0);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 313);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 548);
             // 
             // barButtonItem2
             // 
@@ -217,11 +224,49 @@ namespace AMS.View.Login
             this.barButtonItem3.Id = 2;
             this.barButtonItem3.Name = "barButtonItem3";
             // 
+            // tileControl1
+            // 
+            this.tileControl1.Groups.Add(this.tileGroup2);
+            this.tileControl1.Location = new System.Drawing.Point(154, 151);
+            this.tileControl1.MaxId = 1;
+            this.tileControl1.Name = "tileControl1";
+            this.tileControl1.Size = new System.Drawing.Size(240, 150);
+            this.tileControl1.TabIndex = 9;
+            this.tileControl1.Text = "tileControl1";
+            // 
+            // tileGroup2
+            // 
+            this.tileGroup2.Items.Add(this.tileItem1);
+            this.tileGroup2.Name = "tileGroup2";
+            // 
+            // tileItem1
+            // 
+            tileItemElement3.Text = "tileItem1";
+            this.tileItem1.Elements.Add(tileItemElement3);
+            this.tileItem1.Id = 0;
+            this.tileItem1.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.tileItem1.Name = "tileItem1";
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 29.16667F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.83334F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(416, 27);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.4507F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 66.54929F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(569, 432);
+            this.tableLayoutPanel1.TabIndex = 10;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 313);
+            this.ClientSize = new System.Drawing.Size(997, 548);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tileControl1);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.checkEdit1);
             this.Controls.Add(this.labelControl2);
@@ -269,5 +314,9 @@ namespace AMS.View.Login
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraEditors.TileControl tileControl1;
+        private DevExpress.XtraEditors.TileGroup tileGroup2;
+        private DevExpress.XtraEditors.TileItem tileItem1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

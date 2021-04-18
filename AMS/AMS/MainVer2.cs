@@ -1,6 +1,7 @@
 ﻿using AMS.View;
 using AMS.View.HouseKeeping;
 using AMS.View.Reservation;
+using AMS.View.RoomMapv2;
 using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
@@ -55,6 +56,13 @@ namespace AMS
             fr.MdiParent = this;
             fr.Show();
         
+        }
+
+        private void btnRoomPlan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmRoomPlan fr = new frmRoomPlan();
+            fr.MdiParent = this;
+            fr.Show();
         }
     }
 }

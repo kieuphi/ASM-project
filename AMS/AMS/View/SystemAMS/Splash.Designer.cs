@@ -86,11 +86,11 @@ namespace AMS.View.SystemAMS
             this.bigApp.BackColor = System.Drawing.Color.Transparent;
             this.bigApp.Font = new System.Drawing.Font("Impact", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.bigApp.ForeColor = System.Drawing.Color.White;
-            this.bigApp.Location = new System.Drawing.Point(83, 50);
+            this.bigApp.Location = new System.Drawing.Point(25, 62);
             this.bigApp.Name = "bigApp";
-            this.bigApp.Size = new System.Drawing.Size(286, 80);
+            this.bigApp.Size = new System.Drawing.Size(401, 80);
             this.bigApp.TabIndex = 6;
-            this.bigApp.Text = "DI - SMILE";
+            this.bigApp.Text = "AMSOLUTIONS";
             // 
             // splashtime
             // 
@@ -103,11 +103,11 @@ namespace AMS.View.SystemAMS
             this.appMini.BackColor = System.Drawing.Color.Transparent;
             this.appMini.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.appMini.ForeColor = System.Drawing.Color.White;
-            this.appMini.Location = new System.Drawing.Point(94, 130);
+            this.appMini.Location = new System.Drawing.Point(111, 142);
             this.appMini.Name = "appMini";
-            this.appMini.Size = new System.Drawing.Size(255, 18);
+            this.appMini.Size = new System.Drawing.Size(207, 18);
             this.appMini.TabIndex = 5;
-            this.appMini.Text = "Bản quyền thuộc về AMSolutions";
+            this.appMini.Text = "Bản quyền thuộc về 57MIS";
             // 
             // Splash
             // 

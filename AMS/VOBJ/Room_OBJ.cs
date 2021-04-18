@@ -9,13 +9,14 @@ namespace VOBJ
 {
     public class Room_OBJ
     {
-        public Room_OBJ(int roomcode, string roomname, string floor, string rowx, string coly)
+        public Room_OBJ(int roomcode, string roomname, string floor, string rowx, string coly, string rstatus)
         {
             this.RoomCode = roomcode;
             this.RoomName = roomname;
             this.Floor = floor;
             this.RowX = rowx;
             this.ColY = coly;
+            this.RStatus = rstatus;
         }
 
         public Room_OBJ(DataRow row)
@@ -25,6 +26,7 @@ namespace VOBJ
             this.Floor = row["Floor"].ToString();
             this.RowX = row["RowX"].ToString();
             this.ColY = row["ColY"].ToString();
+            this.RStatus = row["RStatus"].ToString();
 
         }
 
@@ -60,6 +62,12 @@ namespace VOBJ
         {
             get { return colY; }
             set { colY = value; }
+        }
+        private string rstatuS;
+        public string RStatus
+        {
+            get { return rstatuS; }
+            set { rstatuS = value; }
         }
     }
 }

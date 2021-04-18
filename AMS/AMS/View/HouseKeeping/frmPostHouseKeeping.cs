@@ -40,7 +40,7 @@ namespace AMS.View.HouseKeeping
             searchLookUpEdit1.Properties.DisplayMember = nameof(ServiceGroup.GroupName);
         }
 
-        private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        private void gridView1_SelectionChanged_1(object sender, DevExpress.Data.SelectionChangedEventArgs e)
         {
             servicesOnGrid2 = new List<ServiceList>();
             var select = gridView1.GetSelectedRows();

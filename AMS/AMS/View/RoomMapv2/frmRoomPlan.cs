@@ -92,7 +92,7 @@ namespace AMS.View.RoomMapv2
                 if (header.Caption.Equals(currentDate))
                 {
                     header.Appearance.HeaderCaption.Font = new Font("Tahoma", 8F, FontStyle.Bold);
-                    header.Appearance.HeaderCaption.BackColor = Color.SkyBlue;
+                    header.Appearance.HeaderCaption.BackColor = Color.Red;
 
                 }
             }
@@ -211,6 +211,11 @@ namespace AMS.View.RoomMapv2
                 // Insert a new item into the Scheduler popup menu and handle its click event.
                 e.Menu.Items.Add(new SchedulerMenuItem("Đăng Ký", MyClickHandler));
             }
+        }
+
+        private void schedulerControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

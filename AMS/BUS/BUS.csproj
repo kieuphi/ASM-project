@@ -41,7 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompanyBUS.cs" />
+    <Compile Include="MarketChanelBUS.cs" />
+    <Compile Include="MarketSegmentBUS.cs" />
+    <Compile Include="NationalBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RateCodePeriodBUS.cs" />
+    <Compile Include="RoomTypeBUS.cs" />
+    <Compile Include="SaleLocationBUS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VOBJ\VOBJ.csproj">
+      <Project>{b77485f0-ccf1-4f03-94af-2ff41728943a}</Project>
+      <Name>VOBJ</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

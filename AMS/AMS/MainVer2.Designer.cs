@@ -309,7 +309,7 @@ namespace AMS
             this.Controls.Add(this.barDockControlTop);
             this.IsMdiContainer = true;
             this.Name = "MainVer2";
-            this.Text = "MainVer2";
+            this.Text = "DI-SMILE PMS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainVer2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();

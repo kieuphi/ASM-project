@@ -42,11 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookingStatusDAL.cs" />
+    <Compile Include="BookSourceDAL.cs" />
     <Compile Include="Common\AppSetting.cs" />
     <Compile Include="Common\ConnectSQL.cs" />
     <Compile Include="Common\SqlHelper.cs" />
+    <Compile Include="CompanyDAL.cs" />
+    <Compile Include="MarketChanelDAL.cs" />
+    <Compile Include="MarketSegmentDAL.cs" />
+    <Compile Include="NationalDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Room_DAL.cs" />
+    <Compile Include="RateCodePeriodDAL.cs" />
+    <Compile Include="RoomTypeDAL.cs" />
+    <Compile Include="RoomDAL.cs" />
+    <Compile Include="RoomTypeRateDetailDAL.cs" />
+    <Compile Include="SaleLocationDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VOBJ\VOBJ.csproj">

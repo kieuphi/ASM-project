@@ -32,11 +32,11 @@ namespace AMS.View
         public virtual bool AllowRestoreToAutoHideContainer { get; set; }
         void loadptn()
         {
-            List<Room_OBJ> ptnlist = Room_DAL.Instance.LoadPTNlist("");
+            List<Room_OBJ> ptnlist = RoomDAL.Instance.LoadPTNlist("");
 
             foreach (Room_OBJ item in ptnlist)
             {
-                SimpleButton btn = new SimpleButton() { Width = Room_DAL.PTNWith, Height = Room_DAL.PTNHeight };
+                SimpleButton btn = new SimpleButton() { Width = RoomDAL.PTNWith, Height = RoomDAL.PTNHeight };
 
                 this.barManager1.SetPopupContextMenu(btn, this.popupMenu1);
                 //btn.Text = item.RoomName + Environment.NewLine + item.RoomName;

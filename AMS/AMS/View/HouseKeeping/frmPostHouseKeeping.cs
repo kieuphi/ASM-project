@@ -1,4 +1,5 @@
-﻿using DAL.Common;
+﻿using AMS.VIewData;
+using DAL.Common;
 using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
@@ -17,12 +18,21 @@ namespace AMS.View.HouseKeeping
     {
         public DataHelpers DataHelpers;
         private List<ServiceList> servicesOnGrid2;
+        private ContractInfo contractInfo;
+        private List<ServiceListViewData> serviceViewData;
 
-        public frmPostHouseKeeping()
+        public frmPostHouseKeeping(double contractNum)
         {
             InitializeComponent();
             DataHelpers = new DataHelpers();
             servicesOnGrid2 = new List<ServiceList>();
+            contractInfo = DataHelpers.GetConTractInfoByContractNum(contractNum);
+            textEdit1.Text = contractInfo.FirstName + " " + contractInfo.LastName;
+            textEdit2.Text = contractInfo.ContractNum.ToString();
+            textEdit3.Text = contractInfo.RoomCode.ToString();
+            textEdit5.DateTime = contractInfo.ArrivalDate;
+            textEdit6.DateTime = contractInfo.DepartureDate;
+            textEdit4.DateTime = contractInfo.ReservationTime;
         }
 
         private void frmPostHouseKeeping_Load(object sender, EventArgs e)
@@ -43,13 +53,16 @@ namespace AMS.View.HouseKeeping
         private void gridView1_SelectionChanged_1(object sender, DevExpress.Data.SelectionChangedEventArgs e)
         {
             servicesOnGrid2 = new List<ServiceList>();
+            serviceViewData = new List<ServiceListViewData>();
             var select = gridView1.GetSelectedRows();
             foreach (var item in select)
             {
                 ServiceList selectvale = (ServiceList)gridView1.GetRow(item);
+                ServiceListViewData viewData = new ServiceListViewData() { Code = selectvale.SCode, Name = selectvale.SName, Price = selectvale.Price, Quantity = 1 };
+                serviceViewData.Add(viewData);
                 servicesOnGrid2.Add(selectvale);
             }
-            gridControl2.DataSource = servicesOnGrid2;
+            gridControl2.DataSource = serviceViewData;
         }
     }
 }

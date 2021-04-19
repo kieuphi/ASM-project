@@ -20,10 +20,10 @@ namespace DAL.Common
             return Database.Fetch<ServiceGroup>(sql);
         }
 
-        public List<ServicePosted> GetAllServicePosted()
+        public ContractInfo GetConTractInfoByContractNum(double contractNum)
         {
-            Sql sql = Sql.Builder.From("Sale_ServicePosted");
-            return Database.Fetch<ServicePosted>(sql);
+            Sql sql = Sql.Builder.From("Sale_ContractInfo").Where(nameof(ContractInfo.ContractNum) + "=" + contractNum);
+            return Database.FirstOrDefault<ContractInfo>(sql);
         }
 
         public List<ServiceList> GetAllServiceList()

@@ -10,6 +10,7 @@ namespace VOBJ
         public string SCode { get; set; }
         public string SName { get; set; }
         public string SGroup { get; set; }
+        public double Price { get; set; }
         public string IUnit { get; set; }
         public bool OpenPrice { get; set; }
         public string ApartmentID { get; set; }

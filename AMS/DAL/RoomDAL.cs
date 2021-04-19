@@ -9,14 +9,14 @@ using VOBJ;
 
 namespace DAL
 {
-    public class Room_DAL
+    public class RoomDAL
     {
-        private static Room_DAL instance;
+        private static RoomDAL instance;
 
-        public static Room_DAL Instance
+        public static RoomDAL Instance
         {
-            get { if (instance == null) instance = new Room_DAL(); return Room_DAL.instance; }
-            private set { Room_DAL.instance = value; }
+            get { if (instance == null) instance = new RoomDAL(); return RoomDAL.instance; }
+            private set { RoomDAL.instance = value; }
         }
 
         public static int PTNWith = 90;
@@ -24,7 +24,7 @@ namespace DAL
 
 
         ConnectSQL db = new ConnectSQL();
-        private Room_DAL() { }
+        private RoomDAL() { }
 
         public List<Room_OBJ> LoadPTNlist(string id)
         {

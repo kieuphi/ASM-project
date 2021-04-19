@@ -46,6 +46,21 @@ namespace AMS.View.Reservation
             this.clmAlt = new DevExpress.XtraGrid.Columns.GridColumn();
             this.clmChil = new DevExpress.XtraGrid.Columns.GridColumn();
             this.clmBlock = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.panelControl6 = new DevExpress.XtraEditors.PanelControl();
+            this.simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton21 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton27 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton19 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton20 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton25 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton23 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton24 = new DevExpress.XtraEditors.SimpleButton();
+            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.panelControl4 = new DevExpress.XtraEditors.PanelControl();
             this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton12 = new DevExpress.XtraEditors.SimpleButton();
@@ -59,26 +74,27 @@ namespace AMS.View.Reservation
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
-            this.checkEdit4 = new DevExpress.XtraEditors.CheckEdit();
-            this.checkEdit3 = new DevExpress.XtraEditors.CheckEdit();
+            this.ckbSplit = new DevExpress.XtraEditors.CheckEdit();
+            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
+            this.ckbNET = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl24 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl25 = new DevExpress.XtraEditors.LabelControl();
-            this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
-            this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
+            this.dateSplitNgayDi = new DevExpress.XtraEditors.DateEdit();
+            this.dateSplitNgayDen = new DevExpress.XtraEditors.DateEdit();
             this.labelControl22 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.searchLookUpEdit2 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.txtGia = new DevExpress.XtraEditors.TextEdit();
+            this.slkLoaiGia = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.gridView7 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.txtTreEm = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.ckbCode = new DevExpress.XtraEditors.CheckEdit();
+            this.txtNgLon = new DevExpress.XtraEditors.TextEdit();
+            this.SLPhong = new DevExpress.XtraEditors.TextEdit();
+            this.txtSoPhongConLai = new DevExpress.XtraEditors.TextEdit();
             this.labelControl23 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.searchLookUpEdit1 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.slkLoaiPhong = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.labelControl21 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
@@ -87,10 +103,10 @@ namespace AMS.View.Reservation
             this.gridView8 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.txtMasterContractNum = new DevExpress.XtraEditors.TextEdit();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.searchLookUpEdit6 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.slkKhuVuc = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
-            this.searchLookUpEdit5 = new DevExpress.XtraEditors.SearchLookUpEdit();
+            this.slkKenhPhanPhoi = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
             this.slkNguonKhach = new DevExpress.XtraEditors.SearchLookUpEdit();
@@ -106,8 +122,8 @@ namespace AMS.View.Reservation
             this.timeGioDi = new DevExpress.XtraEditors.TimeEdit();
             this.timeGioDen = new DevExpress.XtraEditors.TimeEdit();
             this.dateNgayDi = new DevExpress.XtraEditors.DateEdit();
-            this.dateEdit4 = new DevExpress.XtraEditors.DateEdit();
-            this.dateEdit3 = new DevExpress.XtraEditors.DateEdit();
+            this.dateNguoiTaoCuoi = new DevExpress.XtraEditors.DateEdit();
+            this.dateNgayTao = new DevExpress.XtraEditors.DateEdit();
             this.dateNgayDen = new DevExpress.XtraEditors.DateEdit();
             this.slkCongTy = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -128,8 +144,8 @@ namespace AMS.View.Reservation
             this.txtTen = new DevExpress.XtraEditors.TextEdit();
             this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
             this.txtEmail = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
+            this.txtNgTaoCuoi = new DevExpress.XtraEditors.TextEdit();
+            this.txtNguoiTao = new DevExpress.XtraEditors.TextEdit();
             this.txtSoDem = new DevExpress.XtraEditors.TextEdit();
             this.ckFIT = new DevExpress.XtraEditors.CheckEdit();
             this.txtContractNum = new DevExpress.XtraEditors.TextEdit();
@@ -141,25 +157,30 @@ namespace AMS.View.Reservation
             this.panelControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
-            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).BeginInit();
+            this.panelControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).BeginInit();
+            this.panelControl4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ckbSplit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ckbNET.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateSplitNgayDi.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateSplitNgayDi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateSplitNgayDen.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateSplitNgayDen.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGia.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkLoaiGia.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTreEm.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ckbCode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgLon.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SLPhong.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoPhongConLai.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkLoaiPhong.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).BeginInit();
             this.panelControl2.SuspendLayout();
@@ -167,9 +188,9 @@ namespace AMS.View.Reservation
             ((System.ComponentModel.ISupportInitialize)(this.gridView8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMasterContractNum.Properties)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkKhuVuc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkKenhPhanPhoi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slkNguonKhach.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
@@ -183,10 +204,10 @@ namespace AMS.View.Reservation
             ((System.ComponentModel.ISupportInitialize)(this.timeGioDen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgayDi.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgayDi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNguoiTaoCuoi.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNguoiTaoCuoi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayTao.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayTao.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgayDen.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgayDen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slkCongTy.Properties)).BeginInit();
@@ -195,8 +216,8 @@ namespace AMS.View.Reservation
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgTaoCuoi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNguoiTao.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoDem.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckFIT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtContractNum.Properties)).BeginInit();
@@ -206,13 +227,11 @@ namespace AMS.View.Reservation
             // panelControl1
             // 
             this.panelControl1.Controls.Add(this.panelControl5);
-            this.panelControl1.Controls.Add(this.panelControl4);
-            this.panelControl1.Controls.Add(this.panelControl3);
             this.panelControl1.Controls.Add(this.panelControl2);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1218, 581);
+            this.panelControl1.Size = new System.Drawing.Size(1215, 581);
             this.panelControl1.TabIndex = 0;
             // 
             // panelControl5
@@ -220,19 +239,21 @@ namespace AMS.View.Reservation
             this.panelControl5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panelControl5.Appearance.Options.UseBackColor = true;
             this.panelControl5.Controls.Add(this.gridControl1);
+            this.panelControl5.Controls.Add(this.panelControl6);
+            this.panelControl5.Controls.Add(this.panelControl3);
             this.panelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl5.Location = new System.Drawing.Point(399, 53);
+            this.panelControl5.Location = new System.Drawing.Point(399, 2);
             this.panelControl5.Name = "panelControl5";
-            this.panelControl5.Size = new System.Drawing.Size(713, 526);
+            this.panelControl5.Size = new System.Drawing.Size(814, 577);
             this.panelControl5.TabIndex = 3;
             // 
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(2, 2);
+            this.gridControl1.Location = new System.Drawing.Point(2, 53);
             this.gridControl1.MainView = this.gridView6;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(709, 522);
+            this.gridControl1.Size = new System.Drawing.Size(706, 522);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView6});
@@ -256,12 +277,14 @@ namespace AMS.View.Reservation
             this.clmBlock});
             this.gridView6.GridControl = this.gridControl1;
             this.gridView6.Name = "gridView6";
+            this.gridView6.OptionsView.ColumnAutoWidth = false;
             this.gridView6.OptionsView.ShowFooter = true;
             this.gridView6.OptionsView.ShowGroupPanel = false;
             // 
             // ClmSubBooking
             // 
             this.ClmSubBooking.Caption = "Sub Booking";
+            this.ClmSubBooking.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.ClmSubBooking.Name = "ClmSubBooking";
             this.ClmSubBooking.Visible = true;
             this.ClmSubBooking.VisibleIndex = 0;
@@ -269,6 +292,7 @@ namespace AMS.View.Reservation
             // clmRmType
             // 
             this.clmRmType.Caption = "Loại phòng";
+            this.clmRmType.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.clmRmType.Name = "clmRmType";
             this.clmRmType.Visible = true;
             this.clmRmType.VisibleIndex = 1;
@@ -276,6 +300,7 @@ namespace AMS.View.Reservation
             // clmRoomCode
             // 
             this.clmRoomCode.Caption = "Số phòng";
+            this.clmRoomCode.Fixed = DevExpress.XtraGrid.Columns.FixedStyle.Left;
             this.clmRoomCode.Name = "clmRoomCode";
             this.clmRoomCode.Visible = true;
             this.clmRoomCode.VisibleIndex = 2;
@@ -350,6 +375,165 @@ namespace AMS.View.Reservation
             this.clmBlock.Visible = true;
             this.clmBlock.VisibleIndex = 12;
             // 
+            // panelControl6
+            // 
+            this.panelControl6.Controls.Add(this.simpleButton18);
+            this.panelControl6.Controls.Add(this.simpleButton14);
+            this.panelControl6.Controls.Add(this.simpleButton16);
+            this.panelControl6.Controls.Add(this.simpleButton21);
+            this.panelControl6.Controls.Add(this.simpleButton27);
+            this.panelControl6.Controls.Add(this.simpleButton22);
+            this.panelControl6.Controls.Add(this.simpleButton19);
+            this.panelControl6.Controls.Add(this.simpleButton20);
+            this.panelControl6.Controls.Add(this.simpleButton25);
+            this.panelControl6.Controls.Add(this.simpleButton1);
+            this.panelControl6.Controls.Add(this.simpleButton15);
+            this.panelControl6.Controls.Add(this.simpleButton23);
+            this.panelControl6.Controls.Add(this.simpleButton24);
+            this.panelControl6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelControl6.Location = new System.Drawing.Point(708, 53);
+            this.panelControl6.Name = "panelControl6";
+            this.panelControl6.Size = new System.Drawing.Size(104, 522);
+            this.panelControl6.TabIndex = 3;
+            // 
+            // simpleButton18
+            // 
+            this.simpleButton18.Location = new System.Drawing.Point(7, 301);
+            this.simpleButton18.Name = "simpleButton18";
+            this.simpleButton18.Size = new System.Drawing.Size(95, 30);
+            this.simpleButton18.TabIndex = 16;
+            this.simpleButton18.Text = "Check out";
+            // 
+            // simpleButton14
+            // 
+            this.simpleButton14.Location = new System.Drawing.Point(7, 271);
+            this.simpleButton14.Name = "simpleButton14";
+            this.simpleButton14.Size = new System.Drawing.Size(95, 30);
+            this.simpleButton14.TabIndex = 15;
+            this.simpleButton14.Text = "Balance";
+            // 
+            // simpleButton16
+            // 
+            this.simpleButton16.Location = new System.Drawing.Point(7, 241);
+            this.simpleButton16.Name = "simpleButton16";
+            this.simpleButton16.Size = new System.Drawing.Size(95, 30);
+            this.simpleButton16.TabIndex = 14;
+            this.simpleButton16.Text = "Print";
+            // 
+            // simpleButton21
+            // 
+            this.simpleButton21.Location = new System.Drawing.Point(6, 120);
+            this.simpleButton21.Name = "simpleButton21";
+            this.simpleButton21.Size = new System.Drawing.Size(95, 30);
+            this.simpleButton21.TabIndex = 12;
+            this.simpleButton21.Text = "Auto Assigned";
+            // 
+            // simpleButton27
+            // 
+            this.simpleButton27.Location = new System.Drawing.Point(6, 182);
+            this.simpleButton27.Name = "simpleButton27";
+            this.simpleButton27.Size = new System.Drawing.Size(95, 30);
+            this.simpleButton27.TabIndex = 11;
+            this.simpleButton27.Text = "NoShow";
+            // 
+            // simpleButton22
+            // 
+            this.simpleButton22.Location = new System.Drawing.Point(7, 212);
+            this.simpleButton22.Name = "simpleButton22";
+            this.simpleButton22.Size = new System.Drawing.Size(95, 30);
+            this.simpleButton22.TabIndex = 10;
+            this.simpleButton22.Text = "Cancel";
+            // 
+            // simpleButton19
+            // 
+            this.simpleButton19.Location = new System.Drawing.Point(5, 90);
+            this.simpleButton19.Name = "simpleButton19";
+            this.simpleButton19.Size = new System.Drawing.Size(95, 30);
+            this.simpleButton19.TabIndex = 9;
+            this.simpleButton19.Text = "Deposit";
+            // 
+            // simpleButton20
+            // 
+            this.simpleButton20.Location = new System.Drawing.Point(6, 61);
+            this.simpleButton20.Name = "simpleButton20";
+            this.simpleButton20.Size = new System.Drawing.Size(95, 30);
+            this.simpleButton20.TabIndex = 8;
+            this.simpleButton20.Text = "Update";
+            // 
+            // simpleButton25
+            // 
+            this.simpleButton25.Location = new System.Drawing.Point(8, 362);
+            this.simpleButton25.Name = "simpleButton25";
+            this.simpleButton25.Size = new System.Drawing.Size(95, 32);
+            this.simpleButton25.TabIndex = 6;
+            this.simpleButton25.Text = "Availability";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(7, 331);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(95, 31);
+            this.simpleButton1.TabIndex = 5;
+            this.simpleButton1.Text = "Restore";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // simpleButton15
+            // 
+            this.simpleButton15.Location = new System.Drawing.Point(6, 151);
+            this.simpleButton15.Name = "simpleButton15";
+            this.simpleButton15.Size = new System.Drawing.Size(95, 32);
+            this.simpleButton15.TabIndex = 3;
+            this.simpleButton15.Text = "Check In";
+            // 
+            // simpleButton23
+            // 
+            this.simpleButton23.Location = new System.Drawing.Point(6, 30);
+            this.simpleButton23.Name = "simpleButton23";
+            this.simpleButton23.Size = new System.Drawing.Size(95, 30);
+            this.simpleButton23.TabIndex = 0;
+            this.simpleButton23.Text = "Save";
+            this.simpleButton23.Click += new System.EventHandler(this.simpleButton23_Click);
+            // 
+            // simpleButton24
+            // 
+            this.simpleButton24.Location = new System.Drawing.Point(6, 0);
+            this.simpleButton24.Name = "simpleButton24";
+            this.simpleButton24.Size = new System.Drawing.Size(95, 30);
+            this.simpleButton24.TabIndex = 0;
+            this.simpleButton24.Text = "Search";
+            this.simpleButton24.Click += new System.EventHandler(this.simpleButton24_Click);
+            // 
+            // panelControl3
+            // 
+            this.panelControl3.Controls.Add(this.panelControl4);
+            this.panelControl3.Controls.Add(this.ckbSplit);
+            this.panelControl3.Controls.Add(this.checkEdit1);
+            this.panelControl3.Controls.Add(this.ckbNET);
+            this.panelControl3.Controls.Add(this.labelControl24);
+            this.panelControl3.Controls.Add(this.labelControl25);
+            this.panelControl3.Controls.Add(this.dateSplitNgayDi);
+            this.panelControl3.Controls.Add(this.dateSplitNgayDen);
+            this.panelControl3.Controls.Add(this.labelControl22);
+            this.panelControl3.Controls.Add(this.txtGia);
+            this.panelControl3.Controls.Add(this.slkLoaiGia);
+            this.panelControl3.Controls.Add(this.txtTreEm);
+            this.panelControl3.Controls.Add(this.textEdit2);
+            this.panelControl3.Controls.Add(this.textEdit1);
+            this.panelControl3.Controls.Add(this.ckbCode);
+            this.panelControl3.Controls.Add(this.txtNgLon);
+            this.panelControl3.Controls.Add(this.SLPhong);
+            this.panelControl3.Controls.Add(this.txtSoPhongConLai);
+            this.panelControl3.Controls.Add(this.labelControl23);
+            this.panelControl3.Controls.Add(this.labelControl6);
+            this.panelControl3.Controls.Add(this.slkLoaiPhong);
+            this.panelControl3.Controls.Add(this.labelControl21);
+            this.panelControl3.Controls.Add(this.labelControl20);
+            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelControl3.Location = new System.Drawing.Point(2, 2);
+            this.panelControl3.Name = "panelControl3";
+            this.panelControl3.Size = new System.Drawing.Size(810, 51);
+            this.panelControl3.TabIndex = 1;
+            // 
             // panelControl4
             // 
             this.panelControl4.Controls.Add(this.simpleButton13);
@@ -364,15 +548,14 @@ namespace AMS.View.Reservation
             this.panelControl4.Controls.Add(this.simpleButton4);
             this.panelControl4.Controls.Add(this.simpleButton3);
             this.panelControl4.Controls.Add(this.simpleButton2);
-            this.panelControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelControl4.Location = new System.Drawing.Point(1112, 53);
+            this.panelControl4.Location = new System.Drawing.Point(713, 51);
             this.panelControl4.Name = "panelControl4";
-            this.panelControl4.Size = new System.Drawing.Size(104, 526);
-            this.panelControl4.TabIndex = 2;
+            this.panelControl4.Size = new System.Drawing.Size(104, 577);
+            this.panelControl4.TabIndex = 3;
             // 
             // simpleButton13
             // 
-            this.simpleButton13.Location = new System.Drawing.Point(6, 397);
+            this.simpleButton13.Location = new System.Drawing.Point(10, 464);
             this.simpleButton13.Name = "simpleButton13";
             this.simpleButton13.Size = new System.Drawing.Size(95, 36);
             this.simpleButton13.TabIndex = 5;
@@ -380,7 +563,7 @@ namespace AMS.View.Reservation
             // 
             // simpleButton12
             // 
-            this.simpleButton12.Location = new System.Drawing.Point(6, 324);
+            this.simpleButton12.Location = new System.Drawing.Point(10, 391);
             this.simpleButton12.Name = "simpleButton12";
             this.simpleButton12.Size = new System.Drawing.Size(95, 36);
             this.simpleButton12.TabIndex = 4;
@@ -388,7 +571,7 @@ namespace AMS.View.Reservation
             // 
             // simpleButton11
             // 
-            this.simpleButton11.Location = new System.Drawing.Point(6, 361);
+            this.simpleButton11.Location = new System.Drawing.Point(10, 428);
             this.simpleButton11.Name = "simpleButton11";
             this.simpleButton11.Size = new System.Drawing.Size(95, 36);
             this.simpleButton11.TabIndex = 3;
@@ -396,7 +579,7 @@ namespace AMS.View.Reservation
             // 
             // simpleButton10
             // 
-            this.simpleButton10.Location = new System.Drawing.Point(6, 251);
+            this.simpleButton10.Location = new System.Drawing.Point(10, 318);
             this.simpleButton10.Name = "simpleButton10";
             this.simpleButton10.Size = new System.Drawing.Size(95, 36);
             this.simpleButton10.TabIndex = 2;
@@ -404,52 +587,47 @@ namespace AMS.View.Reservation
             // 
             // simpleButton9
             // 
-            this.simpleButton9.Location = new System.Drawing.Point(6, 215);
+            this.simpleButton9.Location = new System.Drawing.Point(10, 282);
             this.simpleButton9.Name = "simpleButton9";
             this.simpleButton9.Size = new System.Drawing.Size(95, 36);
             this.simpleButton9.TabIndex = 1;
             this.simpleButton9.Text = "Auto Assigned";
-            this.simpleButton9.Click += new System.EventHandler(this.simpleButton9_Click);
             // 
             // simpleButton8
             // 
-            this.simpleButton8.Location = new System.Drawing.Point(6, 287);
+            this.simpleButton8.Location = new System.Drawing.Point(10, 354);
             this.simpleButton8.Name = "simpleButton8";
             this.simpleButton8.Size = new System.Drawing.Size(95, 36);
             this.simpleButton8.TabIndex = 0;
             this.simpleButton8.Text = "Print";
-            this.simpleButton8.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton7
             // 
-            this.simpleButton7.Location = new System.Drawing.Point(4, 109);
+            this.simpleButton7.Location = new System.Drawing.Point(8, 176);
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Size = new System.Drawing.Size(95, 36);
             this.simpleButton7.TabIndex = 0;
             this.simpleButton7.Text = "Deposit";
-            this.simpleButton7.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton6
             // 
-            this.simpleButton6.Location = new System.Drawing.Point(4, 73);
+            this.simpleButton6.Location = new System.Drawing.Point(8, 140);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.Size = new System.Drawing.Size(95, 36);
             this.simpleButton6.TabIndex = 0;
             this.simpleButton6.Text = "Update";
-            this.simpleButton6.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton5
             // 
-            this.simpleButton5.Location = new System.Drawing.Point(5, 179);
+            this.simpleButton5.Location = new System.Drawing.Point(9, 246);
             this.simpleButton5.Name = "simpleButton5";
             this.simpleButton5.Size = new System.Drawing.Size(95, 36);
             this.simpleButton5.TabIndex = 0;
             this.simpleButton5.Text = "NoShow";
-            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton4
             // 
-            this.simpleButton4.Location = new System.Drawing.Point(4, 145);
+            this.simpleButton4.Location = new System.Drawing.Point(8, 212);
             this.simpleButton4.Name = "simpleButton4";
             this.simpleButton4.Size = new System.Drawing.Size(95, 34);
             this.simpleButton4.TabIndex = 0;
@@ -457,7 +635,7 @@ namespace AMS.View.Reservation
             // 
             // simpleButton3
             // 
-            this.simpleButton3.Location = new System.Drawing.Point(5, 40);
+            this.simpleButton3.Location = new System.Drawing.Point(9, 107);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(95, 33);
             this.simpleButton3.TabIndex = 0;
@@ -465,71 +643,57 @@ namespace AMS.View.Reservation
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(5, 6);
+            this.simpleButton2.Location = new System.Drawing.Point(9, 73);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(95, 33);
             this.simpleButton2.TabIndex = 0;
             this.simpleButton2.Text = "Tìm kiếm";
             // 
-            // panelControl3
+            // ckbSplit
             // 
-            this.panelControl3.Controls.Add(this.checkEdit4);
-            this.panelControl3.Controls.Add(this.checkEdit3);
-            this.panelControl3.Controls.Add(this.labelControl24);
-            this.panelControl3.Controls.Add(this.labelControl25);
-            this.panelControl3.Controls.Add(this.dateEdit1);
-            this.panelControl3.Controls.Add(this.dateEdit2);
-            this.panelControl3.Controls.Add(this.labelControl22);
-            this.panelControl3.Controls.Add(this.textEdit4);
-            this.panelControl3.Controls.Add(this.searchLookUpEdit2);
-            this.panelControl3.Controls.Add(this.textEdit5);
-            this.panelControl3.Controls.Add(this.checkEdit1);
-            this.panelControl3.Controls.Add(this.textEdit3);
-            this.panelControl3.Controls.Add(this.textEdit2);
-            this.panelControl3.Controls.Add(this.textEdit1);
-            this.panelControl3.Controls.Add(this.labelControl23);
-            this.panelControl3.Controls.Add(this.simpleButton1);
-            this.panelControl3.Controls.Add(this.labelControl6);
-            this.panelControl3.Controls.Add(this.searchLookUpEdit1);
-            this.panelControl3.Controls.Add(this.labelControl21);
-            this.panelControl3.Controls.Add(this.labelControl20);
-            this.panelControl3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl3.Location = new System.Drawing.Point(399, 2);
-            this.panelControl3.Name = "panelControl3";
-            this.panelControl3.Size = new System.Drawing.Size(817, 51);
-            this.panelControl3.TabIndex = 1;
+            this.ckbSplit.Location = new System.Drawing.Point(583, 28);
+            this.ckbSplit.Name = "ckbSplit";
+            this.ckbSplit.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.ckbSplit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbSplit.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.ckbSplit.Properties.Appearance.Options.UseBackColor = true;
+            this.ckbSplit.Properties.Appearance.Options.UseFont = true;
+            this.ckbSplit.Properties.Appearance.Options.UseForeColor = true;
+            this.ckbSplit.Properties.Caption = "Split";
+            this.ckbSplit.Size = new System.Drawing.Size(60, 19);
+            this.ckbSplit.TabIndex = 21;
             // 
-            // checkEdit4
+            // checkEdit1
             // 
-            this.checkEdit4.Location = new System.Drawing.Point(481, 5);
-            this.checkEdit4.Name = "checkEdit4";
-            this.checkEdit4.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.checkEdit4.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkEdit4.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.checkEdit4.Properties.Appearance.Options.UseBackColor = true;
-            this.checkEdit4.Properties.Appearance.Options.UseFont = true;
-            this.checkEdit4.Properties.Appearance.Options.UseForeColor = true;
-            this.checkEdit4.Properties.Caption = "Split";
-            this.checkEdit4.Size = new System.Drawing.Size(56, 19);
-            this.checkEdit4.TabIndex = 21;
+            this.checkEdit1.Location = new System.Drawing.Point(485, 2);
+            this.checkEdit1.Name = "checkEdit1";
+            this.checkEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.checkEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.checkEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.checkEdit1.Properties.Appearance.Options.UseFont = true;
+            this.checkEdit1.Properties.Appearance.Options.UseForeColor = true;
+            this.checkEdit1.Properties.Caption = "BF";
+            this.checkEdit1.Size = new System.Drawing.Size(40, 19);
+            this.checkEdit1.TabIndex = 20;
             // 
-            // checkEdit3
+            // ckbNET
             // 
-            this.checkEdit3.Location = new System.Drawing.Point(481, 26);
-            this.checkEdit3.Name = "checkEdit3";
-            this.checkEdit3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.checkEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkEdit3.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.checkEdit3.Properties.Appearance.Options.UseBackColor = true;
-            this.checkEdit3.Properties.Appearance.Options.UseFont = true;
-            this.checkEdit3.Properties.Appearance.Options.UseForeColor = true;
-            this.checkEdit3.Properties.Caption = "NET";
-            this.checkEdit3.Size = new System.Drawing.Size(56, 19);
-            this.checkEdit3.TabIndex = 20;
+            this.ckbNET.Location = new System.Drawing.Point(528, 28);
+            this.ckbNET.Name = "ckbNET";
+            this.ckbNET.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.ckbNET.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbNET.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.ckbNET.Properties.Appearance.Options.UseBackColor = true;
+            this.ckbNET.Properties.Appearance.Options.UseFont = true;
+            this.ckbNET.Properties.Appearance.Options.UseForeColor = true;
+            this.ckbNET.Properties.Caption = "NET";
+            this.ckbNET.Size = new System.Drawing.Size(49, 19);
+            this.ckbNET.TabIndex = 20;
             // 
             // labelControl24
             // 
-            this.labelControl24.Location = new System.Drawing.Point(552, 31);
+            this.labelControl24.Location = new System.Drawing.Point(649, 28);
             this.labelControl24.Name = "labelControl24";
             this.labelControl24.Size = new System.Drawing.Size(40, 14);
             this.labelControl24.TabIndex = 18;
@@ -537,39 +701,39 @@ namespace AMS.View.Reservation
             // 
             // labelControl25
             // 
-            this.labelControl25.Location = new System.Drawing.Point(552, 5);
+            this.labelControl25.Location = new System.Drawing.Point(649, 2);
             this.labelControl25.Name = "labelControl25";
             this.labelControl25.Size = new System.Drawing.Size(52, 14);
             this.labelControl25.TabIndex = 19;
             this.labelControl25.Text = "Ngày đến";
             // 
-            // dateEdit1
+            // dateSplitNgayDi
             // 
-            this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(610, 29);
-            this.dateEdit1.Name = "dateEdit1";
-            this.dateEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dateEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateSplitNgayDi.EditValue = null;
+            this.dateSplitNgayDi.Location = new System.Drawing.Point(707, 26);
+            this.dateSplitNgayDi.Name = "dateSplitNgayDi";
+            this.dateSplitNgayDi.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dateSplitNgayDi.Properties.Appearance.Options.UseBackColor = true;
+            this.dateSplitNgayDi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateSplitNgayDi.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(101, 20);
-            this.dateEdit1.TabIndex = 16;
+            this.dateSplitNgayDi.Size = new System.Drawing.Size(101, 20);
+            this.dateSplitNgayDi.TabIndex = 16;
             // 
-            // dateEdit2
+            // dateSplitNgayDen
             // 
-            this.dateEdit2.EditValue = null;
-            this.dateEdit2.Location = new System.Drawing.Point(610, 3);
-            this.dateEdit2.Name = "dateEdit2";
-            this.dateEdit2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dateEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateSplitNgayDen.EditValue = null;
+            this.dateSplitNgayDen.Location = new System.Drawing.Point(707, 0);
+            this.dateSplitNgayDen.Name = "dateSplitNgayDen";
+            this.dateSplitNgayDen.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dateSplitNgayDen.Properties.Appearance.Options.UseBackColor = true;
+            this.dateSplitNgayDen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateSplitNgayDen.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit2.Size = new System.Drawing.Size(101, 20);
-            this.dateEdit2.TabIndex = 17;
+            this.dateSplitNgayDen.Size = new System.Drawing.Size(101, 20);
+            this.dateSplitNgayDen.TabIndex = 17;
             // 
             // labelControl22
             // 
@@ -579,24 +743,25 @@ namespace AMS.View.Reservation
             this.labelControl22.TabIndex = 15;
             this.labelControl22.Text = "Ng.Lớn/ Trẻ em";
             // 
-            // textEdit4
+            // txtGia
             // 
-            this.textEdit4.Location = new System.Drawing.Point(364, 26);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(111, 20);
-            this.textEdit4.TabIndex = 14;
+            this.txtGia.Location = new System.Drawing.Point(364, 26);
+            this.txtGia.Name = "txtGia";
+            this.txtGia.Size = new System.Drawing.Size(111, 20);
+            this.txtGia.TabIndex = 14;
             // 
-            // searchLookUpEdit2
+            // slkLoaiGia
             // 
-            this.searchLookUpEdit2.Location = new System.Drawing.Point(278, 27);
-            this.searchLookUpEdit2.Name = "searchLookUpEdit2";
-            this.searchLookUpEdit2.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.searchLookUpEdit2.Properties.Appearance.Options.UseBackColor = true;
-            this.searchLookUpEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.slkLoaiGia.Location = new System.Drawing.Point(278, 27);
+            this.slkLoaiGia.Name = "slkLoaiGia";
+            this.slkLoaiGia.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.slkLoaiGia.Properties.Appearance.Options.UseBackColor = true;
+            this.slkLoaiGia.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit2.Properties.PopupView = this.gridView7;
-            this.searchLookUpEdit2.Size = new System.Drawing.Size(80, 20);
-            this.searchLookUpEdit2.TabIndex = 13;
+            this.slkLoaiGia.Properties.NullText = "Chọn loại giá...";
+            this.slkLoaiGia.Properties.PopupView = this.gridView7;
+            this.slkLoaiGia.Size = new System.Drawing.Size(80, 20);
+            this.slkLoaiGia.TabIndex = 13;
             // 
             // gridView7
             // 
@@ -605,52 +770,68 @@ namespace AMS.View.Reservation
             this.gridView7.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView7.OptionsView.ShowGroupPanel = false;
             // 
-            // textEdit5
+            // txtTreEm
             // 
-            this.textEdit5.Location = new System.Drawing.Point(421, 2);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(54, 20);
-            this.textEdit5.TabIndex = 12;
-            // 
-            // checkEdit1
-            // 
-            this.checkEdit1.Location = new System.Drawing.Point(216, 29);
-            this.checkEdit1.Name = "checkEdit1";
-            this.checkEdit1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.checkEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.checkEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.checkEdit1.Properties.Appearance.Options.UseFont = true;
-            this.checkEdit1.Properties.Appearance.Options.UseForeColor = true;
-            this.checkEdit1.Properties.Caption = "Code";
-            this.checkEdit1.Size = new System.Drawing.Size(56, 19);
-            this.checkEdit1.TabIndex = 11;
-            this.checkEdit1.CheckedChanged += new System.EventHandler(this.checkEdit1_CheckedChanged_1);
-            // 
-            // textEdit3
-            // 
-            this.textEdit3.Location = new System.Drawing.Point(364, 2);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(51, 20);
-            this.textEdit3.TabIndex = 10;
-            this.textEdit3.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
+            this.txtTreEm.Location = new System.Drawing.Point(421, 2);
+            this.txtTreEm.Name = "txtTreEm";
+            this.txtTreEm.Size = new System.Drawing.Size(54, 20);
+            this.txtTreEm.TabIndex = 12;
             // 
             // textEdit2
             // 
-            this.textEdit2.Location = new System.Drawing.Point(216, 3);
+            this.textEdit2.Location = new System.Drawing.Point(528, 2);
             this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(35, 20);
+            this.textEdit2.Size = new System.Drawing.Size(46, 20);
             this.textEdit2.TabIndex = 10;
             this.textEdit2.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
             // 
             // textEdit1
             // 
-            this.textEdit1.Enabled = false;
-            this.textEdit1.Location = new System.Drawing.Point(72, 28);
+            this.textEdit1.Location = new System.Drawing.Point(583, 2);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(71, 20);
+            this.textEdit1.Size = new System.Drawing.Size(46, 20);
             this.textEdit1.TabIndex = 10;
             this.textEdit1.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
+            // 
+            // ckbCode
+            // 
+            this.ckbCode.Location = new System.Drawing.Point(216, 29);
+            this.ckbCode.Name = "ckbCode";
+            this.ckbCode.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.ckbCode.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ckbCode.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.ckbCode.Properties.Appearance.Options.UseBackColor = true;
+            this.ckbCode.Properties.Appearance.Options.UseFont = true;
+            this.ckbCode.Properties.Appearance.Options.UseForeColor = true;
+            this.ckbCode.Properties.Caption = "Code";
+            this.ckbCode.Size = new System.Drawing.Size(56, 19);
+            this.ckbCode.TabIndex = 11;
+            this.ckbCode.CheckedChanged += new System.EventHandler(this.checkEdit1_CheckedChanged_1);
+            // 
+            // txtNgLon
+            // 
+            this.txtNgLon.Location = new System.Drawing.Point(364, 2);
+            this.txtNgLon.Name = "txtNgLon";
+            this.txtNgLon.Size = new System.Drawing.Size(51, 20);
+            this.txtNgLon.TabIndex = 10;
+            this.txtNgLon.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
+            // 
+            // SLPhong
+            // 
+            this.SLPhong.Location = new System.Drawing.Point(216, 3);
+            this.SLPhong.Name = "SLPhong";
+            this.SLPhong.Size = new System.Drawing.Size(48, 20);
+            this.SLPhong.TabIndex = 10;
+            this.SLPhong.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
+            // 
+            // txtSoPhongConLai
+            // 
+            this.txtSoPhongConLai.Enabled = false;
+            this.txtSoPhongConLai.Location = new System.Drawing.Point(72, 28);
+            this.txtSoPhongConLai.Name = "txtSoPhongConLai";
+            this.txtSoPhongConLai.Size = new System.Drawing.Size(71, 20);
+            this.txtSoPhongConLai.TabIndex = 10;
+            this.txtSoPhongConLai.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
             // 
             // labelControl23
             // 
@@ -661,14 +842,6 @@ namespace AMS.View.Reservation
             this.labelControl23.Text = "Giá bán";
             this.labelControl23.Click += new System.EventHandler(this.labelControl7_Click);
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(719, 5);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(95, 40);
-            this.simpleButton1.TabIndex = 9;
-            this.simpleButton1.Text = "Search";
-            // 
             // labelControl6
             // 
             this.labelControl6.Location = new System.Drawing.Point(158, 5);
@@ -678,18 +851,19 @@ namespace AMS.View.Reservation
             this.labelControl6.Text = "SL Phòng";
             this.labelControl6.Click += new System.EventHandler(this.labelControl7_Click);
             // 
-            // searchLookUpEdit1
+            // slkLoaiPhong
             // 
-            this.searchLookUpEdit1.Location = new System.Drawing.Point(72, 5);
-            this.searchLookUpEdit1.Name = "searchLookUpEdit1";
-            this.searchLookUpEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.searchLookUpEdit1.Properties.Appearance.Options.UseBackColor = true;
-            this.searchLookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.slkLoaiPhong.Location = new System.Drawing.Point(72, 5);
+            this.slkLoaiPhong.Name = "slkLoaiPhong";
+            this.slkLoaiPhong.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.slkLoaiPhong.Properties.Appearance.Options.UseBackColor = true;
+            this.slkLoaiPhong.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit1.Properties.PopupView = this.gridView5;
-            this.searchLookUpEdit1.Size = new System.Drawing.Size(71, 20);
-            this.searchLookUpEdit1.TabIndex = 8;
-            this.searchLookUpEdit1.EditValueChanged += new System.EventHandler(this.searchLookUpEdit1_EditValueChanged);
+            this.slkLoaiPhong.Properties.NullText = "Chọn loại phòng...";
+            this.slkLoaiPhong.Properties.PopupView = this.gridView5;
+            this.slkLoaiPhong.Size = new System.Drawing.Size(71, 20);
+            this.slkLoaiPhong.TabIndex = 8;
+            this.slkLoaiPhong.EditValueChanged += new System.EventHandler(this.searchLookUpEdit1_EditValueChanged);
             // 
             // gridView5
             // 
@@ -727,8 +901,8 @@ namespace AMS.View.Reservation
             this.panelControl2.Controls.Add(this.timeGioDi);
             this.panelControl2.Controls.Add(this.timeGioDen);
             this.panelControl2.Controls.Add(this.dateNgayDi);
-            this.panelControl2.Controls.Add(this.dateEdit4);
-            this.panelControl2.Controls.Add(this.dateEdit3);
+            this.panelControl2.Controls.Add(this.dateNguoiTaoCuoi);
+            this.panelControl2.Controls.Add(this.dateNgayTao);
             this.panelControl2.Controls.Add(this.dateNgayDen);
             this.panelControl2.Controls.Add(this.slkCongTy);
             this.panelControl2.Controls.Add(this.labelControl3);
@@ -748,8 +922,8 @@ namespace AMS.View.Reservation
             this.panelControl2.Controls.Add(this.txtTen);
             this.panelControl2.Controls.Add(this.txtDiaChi);
             this.panelControl2.Controls.Add(this.txtEmail);
-            this.panelControl2.Controls.Add(this.textEdit11);
-            this.panelControl2.Controls.Add(this.textEdit10);
+            this.panelControl2.Controls.Add(this.txtNgTaoCuoi);
+            this.panelControl2.Controls.Add(this.txtNguoiTao);
             this.panelControl2.Controls.Add(this.txtSoDem);
             this.panelControl2.Controls.Add(this.ckFIT);
             this.panelControl2.Controls.Add(this.txtContractNum);
@@ -763,12 +937,14 @@ namespace AMS.View.Reservation
             // 
             // slkQuocTich
             // 
+            this.slkQuocTich.EditValue = "Chọn công ty...";
             this.slkQuocTich.Location = new System.Drawing.Point(87, 291);
             this.slkQuocTich.Name = "slkQuocTich";
             this.slkQuocTich.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.slkQuocTich.Properties.Appearance.Options.UseBackColor = true;
             this.slkQuocTich.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.slkQuocTich.Properties.NullText = "Chọn Quốc tịch...";
             this.slkQuocTich.Properties.PopupView = this.gridView8;
             this.slkQuocTich.Size = new System.Drawing.Size(294, 20);
             this.slkQuocTich.TabIndex = 17;
@@ -789,12 +965,13 @@ namespace AMS.View.Reservation
             this.txtMasterContractNum.Properties.Appearance.Options.UseBackColor = true;
             this.txtMasterContractNum.Size = new System.Drawing.Size(104, 20);
             this.txtMasterContractNum.TabIndex = 16;
+            this.txtMasterContractNum.EditValueChanged += new System.EventHandler(this.txtMasterContractNum_EditValueChanged);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.searchLookUpEdit6);
+            this.groupBox1.Controls.Add(this.slkKhuVuc);
             this.groupBox1.Controls.Add(this.labelControl17);
-            this.groupBox1.Controls.Add(this.searchLookUpEdit5);
+            this.groupBox1.Controls.Add(this.slkKenhPhanPhoi);
             this.groupBox1.Controls.Add(this.labelControl16);
             this.groupBox1.Controls.Add(this.slkNguonKhach);
             this.groupBox1.Controls.Add(this.labelControl15);
@@ -807,15 +984,16 @@ namespace AMS.View.Reservation
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thống kê";
             // 
-            // searchLookUpEdit6
+            // slkKhuVuc
             // 
-            this.searchLookUpEdit6.Location = new System.Drawing.Point(161, 99);
-            this.searchLookUpEdit6.Name = "searchLookUpEdit6";
-            this.searchLookUpEdit6.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.slkKhuVuc.Location = new System.Drawing.Point(161, 99);
+            this.slkKhuVuc.Name = "slkKhuVuc";
+            this.slkKhuVuc.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit6.Properties.PopupView = this.gridView4;
-            this.searchLookUpEdit6.Size = new System.Drawing.Size(227, 20);
-            this.searchLookUpEdit6.TabIndex = 13;
+            this.slkKhuVuc.Properties.NullText = "Chọn khu vực...";
+            this.slkKhuVuc.Properties.PopupView = this.gridView4;
+            this.slkKhuVuc.Size = new System.Drawing.Size(227, 20);
+            this.slkKhuVuc.TabIndex = 13;
             // 
             // gridView4
             // 
@@ -832,15 +1010,16 @@ namespace AMS.View.Reservation
             this.labelControl17.TabIndex = 9;
             this.labelControl17.Text = "Khu vực";
             // 
-            // searchLookUpEdit5
+            // slkKenhPhanPhoi
             // 
-            this.searchLookUpEdit5.Location = new System.Drawing.Point(161, 73);
-            this.searchLookUpEdit5.Name = "searchLookUpEdit5";
-            this.searchLookUpEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.slkKenhPhanPhoi.Location = new System.Drawing.Point(161, 73);
+            this.slkKenhPhanPhoi.Name = "slkKenhPhanPhoi";
+            this.slkKenhPhanPhoi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.searchLookUpEdit5.Properties.PopupView = this.gridView3;
-            this.searchLookUpEdit5.Size = new System.Drawing.Size(227, 20);
-            this.searchLookUpEdit5.TabIndex = 14;
+            this.slkKenhPhanPhoi.Properties.NullText = "Chọn kênh phân phối...";
+            this.slkKenhPhanPhoi.Properties.PopupView = this.gridView3;
+            this.slkKenhPhanPhoi.Size = new System.Drawing.Size(227, 20);
+            this.slkKenhPhanPhoi.TabIndex = 14;
             // 
             // gridView3
             // 
@@ -863,6 +1042,7 @@ namespace AMS.View.Reservation
             this.slkNguonKhach.Name = "slkNguonKhach";
             this.slkNguonKhach.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.slkNguonKhach.Properties.NullText = "Chọn nguồn khách...";
             this.slkNguonKhach.Properties.PopupView = this.gridView2;
             this.slkNguonKhach.Size = new System.Drawing.Size(227, 20);
             this.slkNguonKhach.TabIndex = 15;
@@ -888,6 +1068,7 @@ namespace AMS.View.Reservation
             this.slkPKTT.Name = "slkPKTT";
             this.slkPKTT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.slkPKTT.Properties.NullText = "Chọn phân khúc thị trường...";
             this.slkPKTT.Properties.PopupView = this.gridView1;
             this.slkPKTT.Size = new System.Drawing.Size(227, 20);
             this.slkPKTT.TabIndex = 16;
@@ -929,12 +1110,13 @@ namespace AMS.View.Reservation
             // 
             // slkTrangThai
             // 
-            this.slkTrangThai.Location = new System.Drawing.Point(250, 210);
+            this.slkTrangThai.Location = new System.Drawing.Point(251, 210);
             this.slkTrangThai.Name = "slkTrangThai";
             this.slkTrangThai.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.slkTrangThai.Properties.Appearance.Options.UseBackColor = true;
             this.slkTrangThai.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.slkTrangThai.Properties.NullText = "Chọn trạng thái...";
             this.slkTrangThai.Properties.PopupView = this.searchLookUpEdit2View;
             this.slkTrangThai.Size = new System.Drawing.Size(130, 20);
             this.slkTrangThai.TabIndex = 11;
@@ -949,7 +1131,7 @@ namespace AMS.View.Reservation
             // timeGioDi
             // 
             this.timeGioDi.EditValue = new System.DateTime(2021, 4, 12, 0, 0, 0, 0);
-            this.timeGioDi.Location = new System.Drawing.Point(250, 184);
+            this.timeGioDi.Location = new System.Drawing.Point(251, 184);
             this.timeGioDi.Name = "timeGioDi";
             this.timeGioDi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -959,7 +1141,7 @@ namespace AMS.View.Reservation
             // timeGioDen
             // 
             this.timeGioDen.EditValue = new System.DateTime(2021, 4, 12, 0, 0, 0, 0);
-            this.timeGioDen.Location = new System.Drawing.Point(250, 159);
+            this.timeGioDen.Location = new System.Drawing.Point(251, 159);
             this.timeGioDen.Name = "timeGioDen";
             this.timeGioDen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -980,31 +1162,31 @@ namespace AMS.View.Reservation
             this.dateNgayDi.Size = new System.Drawing.Size(144, 20);
             this.dateNgayDi.TabIndex = 9;
             // 
-            // dateEdit4
+            // dateNguoiTaoCuoi
             // 
-            this.dateEdit4.EditValue = null;
-            this.dateEdit4.Location = new System.Drawing.Point(279, 543);
-            this.dateEdit4.Name = "dateEdit4";
-            this.dateEdit4.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateNguoiTaoCuoi.EditValue = null;
+            this.dateNguoiTaoCuoi.Location = new System.Drawing.Point(279, 543);
+            this.dateNguoiTaoCuoi.Name = "dateNguoiTaoCuoi";
+            this.dateNguoiTaoCuoi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit4.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateNguoiTaoCuoi.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit4.Size = new System.Drawing.Size(115, 20);
-            this.dateEdit4.TabIndex = 9;
-            this.dateEdit4.EditValueChanged += new System.EventHandler(this.dateEdit1_EditValueChanged);
+            this.dateNguoiTaoCuoi.Size = new System.Drawing.Size(115, 20);
+            this.dateNguoiTaoCuoi.TabIndex = 9;
+            this.dateNguoiTaoCuoi.EditValueChanged += new System.EventHandler(this.dateEdit1_EditValueChanged);
             // 
-            // dateEdit3
+            // dateNgayTao
             // 
-            this.dateEdit3.EditValue = null;
-            this.dateEdit3.Location = new System.Drawing.Point(116, 543);
-            this.dateEdit3.Name = "dateEdit3";
-            this.dateEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateNgayTao.EditValue = null;
+            this.dateNgayTao.Location = new System.Drawing.Point(116, 543);
+            this.dateNgayTao.Name = "dateNgayTao";
+            this.dateNgayTao.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit3.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateNgayTao.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit3.Size = new System.Drawing.Size(126, 20);
-            this.dateEdit3.TabIndex = 9;
-            this.dateEdit3.EditValueChanged += new System.EventHandler(this.dateEdit1_EditValueChanged);
+            this.dateNgayTao.Size = new System.Drawing.Size(126, 20);
+            this.dateNgayTao.TabIndex = 9;
+            this.dateNgayTao.EditValueChanged += new System.EventHandler(this.dateEdit1_EditValueChanged);
             // 
             // dateNgayDen
             // 
@@ -1023,12 +1205,14 @@ namespace AMS.View.Reservation
             // 
             // slkCongTy
             // 
+            this.slkCongTy.EditValue = "Chọn";
             this.slkCongTy.Location = new System.Drawing.Point(87, 132);
             this.slkCongTy.Name = "slkCongTy";
             this.slkCongTy.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.slkCongTy.Properties.Appearance.Options.UseBackColor = true;
             this.slkCongTy.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.slkCongTy.Properties.NullText = "Chọn công ty ...";
             this.slkCongTy.Properties.PopupView = this.searchLookUpEdit1View;
             this.slkCongTy.Size = new System.Drawing.Size(294, 20);
             this.slkCongTy.TabIndex = 8;
@@ -1042,7 +1226,7 @@ namespace AMS.View.Reservation
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(7, 82);
+            this.labelControl3.Location = new System.Drawing.Point(46, 82);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(22, 14);
             this.labelControl3.TabIndex = 7;
@@ -1050,7 +1234,7 @@ namespace AMS.View.Reservation
             // 
             // labelControl13
             // 
-            this.labelControl13.Location = new System.Drawing.Point(5, 317);
+            this.labelControl13.Location = new System.Drawing.Point(27, 317);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(41, 14);
             this.labelControl13.TabIndex = 7;
@@ -1058,7 +1242,7 @@ namespace AMS.View.Reservation
             // 
             // labelControl9
             // 
-            this.labelControl9.Location = new System.Drawing.Point(5, 291);
+            this.labelControl9.Location = new System.Drawing.Point(15, 291);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(53, 14);
             this.labelControl9.TabIndex = 7;
@@ -1066,7 +1250,7 @@ namespace AMS.View.Reservation
             // 
             // labelControl8
             // 
-            this.labelControl8.Location = new System.Drawing.Point(5, 265);
+            this.labelControl8.Location = new System.Drawing.Point(33, 265);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(35, 14);
             this.labelControl8.TabIndex = 7;
@@ -1074,7 +1258,7 @@ namespace AMS.View.Reservation
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(4, 239);
+            this.labelControl5.Location = new System.Drawing.Point(41, 239);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(27, 14);
             this.labelControl5.TabIndex = 7;
@@ -1082,7 +1266,7 @@ namespace AMS.View.Reservation
             // 
             // labelControl11
             // 
-            this.labelControl11.Location = new System.Drawing.Point(7, 190);
+            this.labelControl11.Location = new System.Drawing.Point(28, 190);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(40, 14);
             this.labelControl11.TabIndex = 7;
@@ -1116,7 +1300,7 @@ namespace AMS.View.Reservation
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(7, 213);
+            this.labelControl4.Location = new System.Drawing.Point(26, 213);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(42, 14);
             this.labelControl4.TabIndex = 7;
@@ -1124,7 +1308,7 @@ namespace AMS.View.Reservation
             // 
             // labelControl10
             // 
-            this.labelControl10.Location = new System.Drawing.Point(7, 164);
+            this.labelControl10.Location = new System.Drawing.Point(16, 164);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(52, 14);
             this.labelControl10.TabIndex = 7;
@@ -1133,7 +1317,7 @@ namespace AMS.View.Reservation
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(7, 135);
+            this.labelControl7.Location = new System.Drawing.Point(25, 135);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(43, 14);
             this.labelControl7.TabIndex = 7;
@@ -1142,7 +1326,7 @@ namespace AMS.View.Reservation
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(6, 108);
+            this.labelControl2.Location = new System.Drawing.Point(15, 108);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(53, 14);
             this.labelControl2.TabIndex = 7;
@@ -1159,7 +1343,7 @@ namespace AMS.View.Reservation
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(86, 79);
+            this.txtTen.Location = new System.Drawing.Point(87, 79);
             this.txtTen.Name = "txtTen";
             this.txtTen.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtTen.Properties.Appearance.Options.UseBackColor = true;
@@ -1176,27 +1360,27 @@ namespace AMS.View.Reservation
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(86, 236);
+            this.txtEmail.Location = new System.Drawing.Point(87, 236);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(294, 20);
             this.txtEmail.TabIndex = 6;
             this.txtEmail.EditValueChanged += new System.EventHandler(this.textEdit3_EditValueChanged);
             // 
-            // textEdit11
+            // txtNgTaoCuoi
             // 
-            this.textEdit11.Location = new System.Drawing.Point(279, 517);
-            this.textEdit11.Name = "textEdit11";
-            this.textEdit11.Size = new System.Drawing.Size(115, 20);
-            this.textEdit11.TabIndex = 6;
-            this.textEdit11.EditValueChanged += new System.EventHandler(this.textEdit3_EditValueChanged);
+            this.txtNgTaoCuoi.Location = new System.Drawing.Point(279, 517);
+            this.txtNgTaoCuoi.Name = "txtNgTaoCuoi";
+            this.txtNgTaoCuoi.Size = new System.Drawing.Size(115, 20);
+            this.txtNgTaoCuoi.TabIndex = 6;
+            this.txtNgTaoCuoi.EditValueChanged += new System.EventHandler(this.textEdit3_EditValueChanged);
             // 
-            // textEdit10
+            // txtNguoiTao
             // 
-            this.textEdit10.Location = new System.Drawing.Point(116, 517);
-            this.textEdit10.Name = "textEdit10";
-            this.textEdit10.Size = new System.Drawing.Size(126, 20);
-            this.textEdit10.TabIndex = 6;
-            this.textEdit10.EditValueChanged += new System.EventHandler(this.textEdit3_EditValueChanged);
+            this.txtNguoiTao.Location = new System.Drawing.Point(116, 517);
+            this.txtNguoiTao.Name = "txtNguoiTao";
+            this.txtNguoiTao.Size = new System.Drawing.Size(126, 20);
+            this.txtNguoiTao.TabIndex = 6;
+            this.txtNguoiTao.EditValueChanged += new System.EventHandler(this.textEdit3_EditValueChanged);
             // 
             // txtSoDem
             // 
@@ -1209,7 +1393,7 @@ namespace AMS.View.Reservation
             // ckFIT
             // 
             this.ckFIT.EditValue = true;
-            this.ckFIT.Location = new System.Drawing.Point(8, 34);
+            this.ckFIT.Location = new System.Drawing.Point(88, 35);
             this.ckFIT.Name = "ckFIT";
             this.ckFIT.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.ckFIT.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1218,13 +1402,14 @@ namespace AMS.View.Reservation
             this.ckFIT.Properties.Appearance.Options.UseFont = true;
             this.ckFIT.Properties.Appearance.Options.UseForeColor = true;
             this.ckFIT.Properties.Caption = "FIT";
+            this.ckFIT.Properties.CheckedChanged += new System.EventHandler(this.ckFIT_Properties_CheckedChanged);
             this.ckFIT.Size = new System.Drawing.Size(75, 19);
             this.ckFIT.TabIndex = 5;
             // 
             // txtContractNum
             // 
             this.txtContractNum.Enabled = false;
-            this.txtContractNum.Location = new System.Drawing.Point(279, 34);
+            this.txtContractNum.Location = new System.Drawing.Point(277, 34);
             this.txtContractNum.Name = "txtContractNum";
             this.txtContractNum.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.txtContractNum.Properties.Appearance.Options.UseBackColor = true;
@@ -1233,7 +1418,7 @@ namespace AMS.View.Reservation
             // 
             // ckGIT
             // 
-            this.ckGIT.Location = new System.Drawing.Point(89, 35);
+            this.ckGIT.Location = new System.Drawing.Point(6, 35);
             this.ckGIT.Name = "ckGIT";
             this.ckGIT.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
             this.ckGIT.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1242,6 +1427,7 @@ namespace AMS.View.Reservation
             this.ckGIT.Properties.Appearance.Options.UseFont = true;
             this.ckGIT.Properties.Appearance.Options.UseForeColor = true;
             this.ckGIT.Properties.Caption = "GIT";
+            this.ckGIT.Properties.CheckedChanged += new System.EventHandler(this.ckGIT_Properties_CheckedChanged);
             this.ckGIT.Size = new System.Drawing.Size(75, 19);
             this.ckGIT.TabIndex = 2;
             // 
@@ -1257,36 +1443,42 @@ namespace AMS.View.Reservation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1218, 581);
+            this.ClientSize = new System.Drawing.Size(1215, 581);
             this.Controls.Add(this.panelControl1);
             this.Name = "frmBookingInfo";
             this.Text = "frmBookingInfo";
+            this.Load += new System.EventHandler(this.frmBookingInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl5)).EndInit();
             this.panelControl5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
-            this.panelControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl6)).EndInit();
+            this.panelControl6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
             this.panelControl3.ResumeLayout(false);
             this.panelControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panelControl4)).EndInit();
+            this.panelControl4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ckbSplit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ckbNET.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateSplitNgayDi.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateSplitNgayDi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateSplitNgayDen.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateSplitNgayDen.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtGia.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkLoaiGia.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTreEm.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ckbCode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgLon.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SLPhong.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSoPhongConLai.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkLoaiPhong.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
             this.panelControl2.ResumeLayout(false);
@@ -1296,9 +1488,9 @@ namespace AMS.View.Reservation
             ((System.ComponentModel.ISupportInitialize)(this.txtMasterContractNum.Properties)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkKhuVuc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slkKenhPhanPhoi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slkNguonKhach.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
@@ -1312,10 +1504,10 @@ namespace AMS.View.Reservation
             ((System.ComponentModel.ISupportInitialize)(this.timeGioDen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgayDi.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgayDi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNguoiTaoCuoi.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNguoiTaoCuoi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayTao.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNgayTao.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgayDen.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgayDen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slkCongTy.Properties)).EndInit();
@@ -1324,8 +1516,8 @@ namespace AMS.View.Reservation
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNgTaoCuoi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNguoiTao.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoDem.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ckFIT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtContractNum.Properties)).EndInit();
@@ -1338,7 +1530,6 @@ namespace AMS.View.Reservation
 
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraEditors.PanelControl panelControl5;
-        private DevExpress.XtraEditors.PanelControl panelControl4;
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
@@ -1370,26 +1561,25 @@ namespace AMS.View.Reservation
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl18;
-        private DevExpress.XtraEditors.TextEdit textEdit10;
+        private DevExpress.XtraEditors.TextEdit txtNguoiTao;
         private DevExpress.XtraEditors.RadioGroup radioGroup1;
-        private DevExpress.XtraEditors.DateEdit dateEdit4;
-        private DevExpress.XtraEditors.DateEdit dateEdit3;
+        private DevExpress.XtraEditors.DateEdit dateNguoiTaoCuoi;
+        private DevExpress.XtraEditors.DateEdit dateNgayTao;
         private DevExpress.XtraEditors.LabelControl labelControl19;
-        private DevExpress.XtraEditors.TextEdit textEdit11;
+        private DevExpress.XtraEditors.TextEdit txtNgTaoCuoi;
         private DevExpress.XtraEditors.TextEdit txtTenDoan;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit1;
+        private DevExpress.XtraEditors.SearchLookUpEdit slkLoaiPhong;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
         private DevExpress.XtraEditors.LabelControl labelControl21;
         private DevExpress.XtraEditors.LabelControl labelControl20;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtSoPhongConLai;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit6;
+        private DevExpress.XtraEditors.SearchLookUpEdit slkKhuVuc;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
         private DevExpress.XtraEditors.LabelControl labelControl17;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit5;
+        private DevExpress.XtraEditors.SearchLookUpEdit slkKenhPhanPhoi;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraEditors.SearchLookUpEdit slkNguonKhach;
@@ -1410,37 +1600,55 @@ namespace AMS.View.Reservation
         private DevExpress.XtraGrid.Columns.GridColumn clmNET;
         private DevExpress.XtraGrid.Columns.GridColumn clmAlt;
         private DevExpress.XtraGrid.Columns.GridColumn clmChil;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton8;
-        private DevExpress.XtraEditors.SimpleButton simpleButton7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit SLPhong;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.CheckEdit checkEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.CheckEdit ckbCode;
+        private DevExpress.XtraEditors.TextEdit txtNgLon;
         private DevExpress.XtraEditors.LabelControl labelControl23;
         private DevExpress.XtraEditors.LabelControl labelControl24;
         private DevExpress.XtraEditors.LabelControl labelControl25;
-        private DevExpress.XtraEditors.DateEdit dateEdit1;
-        private DevExpress.XtraEditors.DateEdit dateEdit2;
+        private DevExpress.XtraEditors.DateEdit dateSplitNgayDi;
+        private DevExpress.XtraEditors.DateEdit dateSplitNgayDen;
         private DevExpress.XtraEditors.LabelControl labelControl22;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.SearchLookUpEdit searchLookUpEdit2;
+        private DevExpress.XtraEditors.TextEdit txtGia;
+        private DevExpress.XtraEditors.SearchLookUpEdit slkLoaiGia;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView7;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit txtTreEm;
         private DevExpress.XtraEditors.TextEdit txtMasterContractNum;
-        private DevExpress.XtraEditors.CheckEdit checkEdit4;
-        private DevExpress.XtraEditors.CheckEdit checkEdit3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton9;
+        private DevExpress.XtraEditors.CheckEdit ckbSplit;
+        private DevExpress.XtraEditors.CheckEdit ckbNET;
         private DevExpress.XtraGrid.Columns.GridColumn clmBlock;
+        private DevExpress.XtraEditors.SearchLookUpEdit slkQuocTich;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView8;
+        private DevExpress.XtraEditors.PanelControl panelControl6;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton15;
+        private DevExpress.XtraEditors.SimpleButton simpleButton24;
+        private DevExpress.XtraEditors.PanelControl panelControl4;
         private DevExpress.XtraEditors.SimpleButton simpleButton13;
         private DevExpress.XtraEditors.SimpleButton simpleButton12;
         private DevExpress.XtraEditors.SimpleButton simpleButton11;
         private DevExpress.XtraEditors.SimpleButton simpleButton10;
-        private DevExpress.XtraEditors.SearchLookUpEdit slkQuocTich;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView8;
+        private DevExpress.XtraEditors.SimpleButton simpleButton9;
+        private DevExpress.XtraEditors.SimpleButton simpleButton8;
+        private DevExpress.XtraEditors.SimpleButton simpleButton7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.CheckEdit checkEdit1;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton25;
+        private DevExpress.XtraEditors.SimpleButton simpleButton23;
+        private DevExpress.XtraEditors.SimpleButton simpleButton18;
+        private DevExpress.XtraEditors.SimpleButton simpleButton14;
+        private DevExpress.XtraEditors.SimpleButton simpleButton16;
+        private DevExpress.XtraEditors.SimpleButton simpleButton21;
+        private DevExpress.XtraEditors.SimpleButton simpleButton27;
+        private DevExpress.XtraEditors.SimpleButton simpleButton22;
+        private DevExpress.XtraEditors.SimpleButton simpleButton19;
+        private DevExpress.XtraEditors.SimpleButton simpleButton20;
     }
 }

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AMS.View;
 using AMS.View.Login;
+using AMS.View.Reservation;
 using AMS.View.SystemAMS;
 
 namespace AMS

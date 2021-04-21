@@ -31,11 +31,11 @@ namespace AMS.View
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
+            this.tblLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.tblLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
             this.SuspendLayout();
@@ -65,6 +65,19 @@ namespace AMS.View
             new DevExpress.XtraEditors.Repository.SearchButton()});
             this.searchControl1.Size = new System.Drawing.Size(253, 35);
             this.searchControl1.TabIndex = 6;
+            // 
+            // tblLayoutPanel
+            // 
+            this.tblLayoutPanel.AutoScroll = true;
+            this.tblLayoutPanel.ColumnCount = 1;
+            this.tblLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tblLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tblLayoutPanel.Location = new System.Drawing.Point(0, 48);
+            this.tblLayoutPanel.Name = "tblLayoutPanel";
+            this.tblLayoutPanel.RowCount = 1;
+            this.tblLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tblLayoutPanel.Size = new System.Drawing.Size(1030, 579);
+            this.tblLayoutPanel.TabIndex = 2;
             // 
             // simpleButton3
             // 
@@ -102,19 +115,6 @@ namespace AMS.View
             this.simpleButton7.TabIndex = 5;
             this.simpleButton7.Text = "Trạng thái";
             this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
-            // 
-            // tblLayoutPanel
-            // 
-            this.tblLayoutPanel.AutoScroll = true;
-            this.tblLayoutPanel.ColumnCount = 1;
-            this.tblLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tblLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tblLayoutPanel.Location = new System.Drawing.Point(0, 48);
-            this.tblLayoutPanel.Name = "tblLayoutPanel";
-            this.tblLayoutPanel.RowCount = 1;
-            this.tblLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tblLayoutPanel.Size = new System.Drawing.Size(1030, 579);
-            this.tblLayoutPanel.TabIndex = 2;
             // 
             // frmLoadRoomVer2
             // 

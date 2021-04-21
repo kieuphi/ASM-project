@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,10 +9,48 @@ namespace VOBJ
 {
    public class BookingInfoOBJ
     {
+        public BookingInfoOBJ(int contractnum, string contractcode, string roomcode, string bbkstatus, string arrival, string depature, string lastname)
+        {
+            this.ContractNum = contractnum;
+            this.ContractCode = contractcode;
+            this.RoomCode = roomcode;
+            this.BookStatus = bbkstatus;
+            this.ArrivalDate = arrival;
+            this.DepartureDate = depature;
+            this.LastName = lastname;
+        }
+        public BookingInfoOBJ(DataRow row)
+        {
+            this.ContractNum = Convert.ToInt32(row["ContractNum"]);
+            this.ContractCode = row["ContractCode"].ToString();
+            this.RoomCode = row["RoomCode"].ToString();
+            this.BookStatus = row["BookStatus"].ToString();
+            this.ArrivalDate = row["ArrivalDate"].ToString();
+            this.DepartureDate = row["DepartureDate"].ToString();
+            this.LastName = row["LastName"].ToString();
+
+        }
         public int Index { get; set; }
-        public int ContractNum { get; set; }
-        public string ContractCode { get; set; }
-        public string LastName { get; set; }
+
+        private int contractnum;
+        public int ContractNum
+        {
+            get { return contractnum; }
+            set { contractnum = value; }
+        }
+
+        private string contractcode;
+        public string ContractCode
+        {
+            get { return contractcode; }
+            set { contractcode = value; }
+        }
+        public string lastname { get; set; }
+        public string LastName
+        {
+            get { return lastname; }
+            set { lastname = value; }
+        }
         public string FirstName { get; set; }
         public string TitleCode { get; set; }
         public string TelNum { get; set; }
@@ -19,9 +58,19 @@ namespace VOBJ
         public string Mail { get; set; }
         public string Address { get; set; }
         public int Nationality { get; set; }
-        public DateTime ArrivalDate { get; set; }
-        public DateTime ArrivalTime { get; set; }
-        public DateTime DepartureDate { get; set; }
+        public string arrivaldate { get; set; }
+        public string ArrivalDate
+        {
+            get { return arrivaldate; }
+            set { arrivaldate = value; }
+        }
+        public string ArrivalTime { get; set; }
+        public string departuredate { get; set; }
+        public string DepartureDate
+        {
+            get { return departuredate; }
+            set { departuredate = value; }
+        }
         public DateTime DepartureTime { get; set; }
         public string RoomTypeCode { get; set; }
         public string RoomCode { get; set; }
@@ -88,8 +137,12 @@ namespace VOBJ
         public bool OwnerFlag { get; set; }
         public bool InternalFlag { get; set; }
         public bool PartnerFlag { get; set; }
-        public string BookStatus { get; set; }
-
+        public string bookstatus { get; set; }
+        public string BookStatus
+        {
+            get { return bookstatus; }
+            set { bookstatus = value; }
+        }
         public bool NetRate { get; set; }
         public bool IncludeBF { get; set; }
         public bool CancelFlag { get; set; }

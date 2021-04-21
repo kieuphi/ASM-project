@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BookingInfoOBJ.cs" />
     <Compile Include="BookSourceOBJ.cs" />
     <Compile Include="BookingStatusOBJ.cs" />
     <Compile Include="CompanyOBJ.cs" />

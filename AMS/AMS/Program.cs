@@ -7,6 +7,7 @@ using AMS.View;
 using AMS.View.Login;
 using AMS.View.RoomMapv2;
 using AMS.View.SystemAMS;
+using DXApplication;
 
 namespace AMS
 {

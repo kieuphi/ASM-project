@@ -47,7 +47,7 @@ namespace AMS.View
             int RoomID = 0;
             string RoomState = "";
             string RoomName = "";
-            List<Room_OBJ> ptnlist = Room_DAL.Instance.LoadPTNlist("");
+            List<Room_OBJ> ptnlist = RoomDAL.Instance.LoadPTNlist("");
             foreach (Room_OBJ item in ptnlist)
             {
                 int rowIndex = Convert.ToInt32(item.RowX);

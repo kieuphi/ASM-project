@@ -13,6 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,7 +26,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -170,6 +170,12 @@
     <Compile Include="View\Reservation\frmBookingInfo.Designer.cs">
       <DependentUpon>frmBookingInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\RoomMapv2\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RoomMapv2\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\RoomMapv2\frmChangeRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,12 @@
     </Compile>
     <Compile Include="View\RoomMapv2\frmRoomPlan.Designer.cs">
       <DependentUpon>frmRoomPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RoomMapv2\frmRoomPlanNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RoomMapv2\frmRoomPlanNew.Designer.cs">
+      <DependentUpon>frmRoomPlanNew.cs</DependentUpon>
     </Compile>
     <Compile Include="View\RoomMapv2\RoomUC.cs">
       <SubType>UserControl</SubType>
@@ -260,6 +272,9 @@
     <EmbeddedResource Include="View\Reservation\frmBookingInfo.resx">
       <DependentUpon>frmBookingInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\RoomMapv2\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\RoomMapv2\frmChangeRoom.resx">
       <DependentUpon>frmChangeRoom.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,6 +283,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\RoomMapv2\frmRoomPlan.resx">
       <DependentUpon>frmRoomPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RoomMapv2\frmRoomPlanNew.resx">
+      <DependentUpon>frmRoomPlanNew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\RoomMapv2\RoomUC.resx">
       <DependentUpon>RoomUC.cs</DependentUpon>

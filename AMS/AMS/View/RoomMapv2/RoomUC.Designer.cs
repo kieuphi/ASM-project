@@ -36,8 +36,8 @@ namespace AMS.View.RoomMapv2
             this.lbl_RoomNum = new System.Windows.Forms.Label();
             this.pnl_Back = new DevExpress.XtraEditors.PanelControl();
             this.lbl_RoomUsers = new DevExpress.XtraEditors.LabelControl();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.btn_checkIn = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_checkOut = new System.Windows.Forms.ToolStripMenuItem();
             this.btn_RoomChange = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,8 +46,8 @@ namespace AMS.View.RoomMapv2
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnl_Back)).BeginInit();
             this.pnl_Back.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -81,7 +81,6 @@ namespace AMS.View.RoomMapv2
             this.pictureBox1.Size = new System.Drawing.Size(25, 31);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-
             // 
             // pictureBox3
             // 
@@ -98,7 +97,6 @@ namespace AMS.View.RoomMapv2
             this.pictureBox3.Size = new System.Drawing.Size(28, 31);
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
-
             // 
             // lbl_RoomNum
             // 
@@ -147,15 +145,6 @@ namespace AMS.View.RoomMapv2
             this.lbl_RoomUsers.TabIndex = 1;
             this.lbl_RoomUsers.Text = "labelControl1";
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_checkIn,
-            this.btn_checkOut,
-            this.btn_RoomChange});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(154, 70);
-            // 
             // pictureBox4
             // 
             this.pictureBox4.ContextMenuStrip = this.contextMenuStrip1;
@@ -169,6 +158,15 @@ namespace AMS.View.RoomMapv2
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             this.pictureBox4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseUp);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btn_checkIn,
+            this.btn_checkOut,
+            this.btn_RoomChange});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(154, 70);
             // 
             // btn_checkIn
             // 
@@ -211,8 +209,8 @@ namespace AMS.View.RoomMapv2
             ((System.ComponentModel.ISupportInitialize)(this.pnl_Back)).EndInit();
             this.pnl_Back.ResumeLayout(false);
             this.pnl_Back.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

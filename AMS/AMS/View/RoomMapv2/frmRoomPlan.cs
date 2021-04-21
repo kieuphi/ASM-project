@@ -30,43 +30,43 @@ namespace AMS.View.RoomMapv2
             mappings.Id = "RoomCode";
             mappings.Caption = "RoomName";
 
-            schedulerStorage1.Resources.DataSource = GetDataFromDataTableRoom();
-            schedulerStorage1.Appointments.DataSource = GetDataFromDataTable();
 
-            schedulerControl1.GanttView.CellsAutoHeightOptions.Enabled = true;
-            schedulerControl1.Views.TimelineView.CellsAutoHeightOptions.Enabled = true;
-            schedulerControl1.GanttView.ResourcesPerPage = 24;
+            schedulerStorage1.Resources.DataSource = GetDataFromDataTableRoom();
+            schedulerStorage1.Appointments.DataSource = GetDataFromDataTableBooking();
+
+            schedulerControl2.GanttView.CellsAutoHeightOptions.Enabled = true;
+            schedulerControl2.Views.TimelineView.CellsAutoHeightOptions.Enabled = true;
+            schedulerControl2.GanttView.ResourcesPerPage = 24;
+
+            this.schedulerControl2.GroupType = SchedulerGroupType.Resource;
+            this.schedulerControl2.Start = DateTime.Today;
         }
         private void InitAppointments()
         {
             AppointmentMappingInfo mappings = schedulerStorage1.Appointments.Mappings;
-            mappings.AllDay = "true";
-            mappings.Start = "GioDen";
-            mappings.End = "GioDi";
-            mappings.Subject = "TieuDe";
-            mappings.AppointmentId = "ID";
-            mappings.ResourceId = "IDPhong";
-            mappings.Description = "Description";
-            mappings.ReminderInfo = "False";
+            // mappings.AllDay = "true";
+            mappings.Start = "ArrivalDate";
+            mappings.End = "DepartureDate";
+            mappings.Subject = "ContractNum";
+            // mappings.AppointmentId = "RoomName";
+            mappings.ResourceId = "RoomCode";
+            mappings.Description = "LastName";
+            mappings.AppointmentId  = "BookStatus";
+            // mappings.ReminderInfo = "False";
         }
-        private DataTable GetDataFromDataTable()
+        private List<BookingInfoOBJ> GetDataFromDataTableBooking()
         {
 
-            DataTable table = new DataTable();
-            table.Columns.Add("ID", typeof(int));
-            table.Columns.Add("IDPhong", typeof(string));
-            table.Columns.Add("TieuDe", typeof(string));
-            table.Columns.Add("Description", typeof(string));
-            table.Columns.Add("GioDen", typeof(string));
-            table.Columns.Add("GioDi", typeof(string));
-            table.Columns.Add("TinhTrang", typeof(int));
+            List<BookingInfoOBJ> com = new List<BookingInfoOBJ>();
+            DataTable table = db.GetData("select ContractNum,ContractCode,RoomCode,BookStatus,ArrivalDate,DepartureDate,LastName from Sale_ContractInfo");
 
-            table.Rows.Add(25, "A25", "Hydralazine Hydralazine", "Christoff Christoff ", new DateTime(2020, 05, 12, 2, 20, 00), new DateTime(2020, 05, 12, 2, 40, 00), 1);
-            table.Rows.Add(30, "A30", "Combivent Hydralazine", "Janet", new DateTime(2020, 05, 12, 3, 20, 00), new DateTime(2020, 05, 12, 3, 40, 00), 2);
-            table.Rows.Add(35, "A35", "Overview of formatting ", "Gantt bars look simple enough, but they can get confusing as projects get complex.", new DateTime(2020, 05, 12, 11, 20, 00), new DateTime(2020, 05, 12, 11, 40, 00), 2);
-            table.Rows.Add(40, "A40", "What do you want to do?", "Gantt Chart views allow you see", new DateTime(2020, 05, 12, 1, 20, 00), new DateTime(2020, 05, 12, 1, 40, 00), 2);
-            table.Rows.Add(45, "A25", "How to change the height of a Gantt chart in amCharts?", "Hi you can use a style tag to do that", new DateTime(2020, 05, 12, 3, 20, 00), new DateTime(2020, 05, 12, 3, 40, 00), 1);
-            return table;
+            foreach (DataRow item in table.Rows)
+            {
+                BookingInfoOBJ roommap = new BookingInfoOBJ(item);
+                com.Add(roommap);
+            }
+
+            return com;
         }
         ConnectSQL db = new ConnectSQL();
         private List<Room_OBJ> GetDataFromDataTableRoom()
@@ -82,30 +82,6 @@ namespace AMS.View.RoomMapv2
             }
 
             return ptnlist;
-        }
-        private void schedulerControl1_CustomDrawDayHeader(object sender, CustomDrawObjectEventArgs e)
-        {
-            if (schedulerControl1.ActiveViewType == SchedulerViewType.Gantt && e.ObjectInfo is DayHeader)
-            {
-                DayHeader header = e.ObjectInfo as DayHeader;
-                string currentDate = DateTime.Now.ToString("dd/MM/yyyy");
-                if (header.Caption.Equals(currentDate))
-                {
-                    header.Appearance.HeaderCaption.Font = new Font("Tahoma", 8F, FontStyle.Bold);
-                    header.Appearance.HeaderCaption.BackColor = Color.Red;
-
-                }
-            }
-        }
-
-        private void schedulerControl1_MouseUp(object sender, MouseEventArgs e)
-        {
-
-        }
-
-        private void schedulerControl1_MouseDown(object sender, MouseEventArgs e)
-        {
-
         }
 
         private void schedulerControl1_EditAppointmentFormShowing(object sender, AppointmentFormEventArgs e)
@@ -148,12 +124,6 @@ namespace AMS.View.RoomMapv2
                 f.Dispose();
             }
 
-        }
-
-        private void schedulerControl1_AppointmentViewInfoCustomizing(object sender, AppointmentViewInfoCustomizingEventArgs e)
-        {
-            string tinhTrang = e.ViewInfo.Appointment.CustomFields["BookStatus"] + "";
-            e.ViewInfo.Appearance.BackColor = tinhTrang == "1" ? Color.Red : Color.Yellow;
         }
 
         private void schedulerControl1_PopupMenuShowing_1(object sender, PopupMenuShowingEventArgs e)
@@ -215,6 +185,29 @@ namespace AMS.View.RoomMapv2
 
         private void schedulerControl1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void schedulerControl2_CustomDrawDayHeader(object sender, CustomDrawObjectEventArgs e)
+        {
+                if (schedulerControl1.ActiveViewType == SchedulerViewType.Gantt && e.ObjectInfo is DayHeader)
+                {
+                    DayHeader header = e.ObjectInfo as DayHeader;
+                    string currentDate = DateTime.Now.ToString("dd/MM/yyyy");
+                    if (header.Caption.Equals(currentDate))
+                    {
+                        header.Appearance.HeaderCaption.Font = new Font("Tahoma", 8F, FontStyle.Bold);
+                        header.Appearance.HeaderCaption.BackColor = Color.SkyBlue;
+
+                    }
+                }
+           
+        }
+
+        private void schedulerControl2_AppointmentViewInfoCustomizing(object sender, AppointmentViewInfoCustomizingEventArgs e)
+        {
+                string tinhTrang = e.ViewInfo.Appointment.CustomFields["BookStatus"] + "";
+                e.ViewInfo.Appearance.BackColor = tinhTrang == "1" ? Color.Red : Color.Yellow;
 
         }
     }

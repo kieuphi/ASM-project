@@ -17,6 +17,7 @@ namespace VOBJ
             this.RowX = rowx;
             this.ColY = coly;
             this.RStatus = rstatus;
+
         }
 
         public Room_OBJ(DataRow row)

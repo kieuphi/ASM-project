@@ -109,5 +109,10 @@ namespace AMS.View
             DBHelper.ExecuteSQL("update APM_Room set RStatus = '2' where RoomName = '106");
             load();
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

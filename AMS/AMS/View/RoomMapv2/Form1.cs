@@ -31,7 +31,7 @@ namespace DXApplication
             ResourceMappingInfo mappings = schedulerStorage1.Resources.Mappings;
             mappings.Id = "RoomCode";
             mappings.Caption = "RoomName";
-
+            mappings.Caption = "RoomTypeCode";
             schedulerStorage1.Resources.DataSource = GetDataFromDataTableRoom();
             schedulerStorage1.Appointments.DataSource = GetDataFromDataTable();
 
@@ -69,13 +69,13 @@ namespace DXApplication
         private DataTable GetDataFromDataTable()
         {
 
-            DataTable table = db.GetData("select RoomTypeCode + ' - ' + CompanyName as Ten,ContractNum,ContractCode,RoomCode,BookStatus,ArrivalDate,DepartureDate,LastName +' '+ FirstName as LastName from Sale_ContractInfo");
+            DataTable table = db.GetData("select N'Booking:'+ ' ' + cast(ContractNum as varchar) + ' - ' + CompanyName as Ten,ContractNum,ContractCode,RoomCode,BookStatus,ArrivalDate,DepartureDate,LastName +' '+ FirstName as LastName from Sale_ContractInfo");
                 return table;
         }
 
         private DataTable GetDataFromDataTableRoom()
         {
-            DataTable table = db.GetData("select RoomCode,RoomName,Floor,RowX,ColY,RStatus from APM_Room");
+            DataTable table = db.GetData("select RoomCode,RoomName,Floor,RowX,ColY,RStatus,ap.RoomTypeCode as RoomTypeCode from APM_Room ap left join APM_RoomType rt on ap.RoomTypeCode = rt.RoomTypeCode");
 
             return table;
         }

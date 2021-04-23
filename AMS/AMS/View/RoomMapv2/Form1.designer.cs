@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraScheduler.SchedulerColorSchema schedulerColorSchema2 = new DevExpress.XtraScheduler.SchedulerColorSchema();
-            DevExpress.XtraScheduler.TimeRuler timeRuler3 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeScaleYear timeScaleYear3 = new DevExpress.XtraScheduler.TimeScaleYear();
-            DevExpress.XtraScheduler.TimeScaleQuarter timeScaleQuarter3 = new DevExpress.XtraScheduler.TimeScaleQuarter();
-            DevExpress.XtraScheduler.TimeScaleMonth timeScaleMonth3 = new DevExpress.XtraScheduler.TimeScaleMonth();
-            DevExpress.XtraScheduler.TimeScaleWeek timeScaleWeek3 = new DevExpress.XtraScheduler.TimeScaleWeek();
-            DevExpress.XtraScheduler.TimeScaleDay timeScaleDay3 = new DevExpress.XtraScheduler.TimeScaleDay();
-            DevExpress.XtraScheduler.TimeScaleHour timeScaleHour3 = new DevExpress.XtraScheduler.TimeScaleHour();
-            DevExpress.XtraScheduler.TimeScale15Minutes timeScale15Minutes3 = new DevExpress.XtraScheduler.TimeScale15Minutes();
-            DevExpress.XtraScheduler.TimeScaleYear timeScaleYear4 = new DevExpress.XtraScheduler.TimeScaleYear();
-            DevExpress.XtraScheduler.TimeScaleQuarter timeScaleQuarter4 = new DevExpress.XtraScheduler.TimeScaleQuarter();
-            DevExpress.XtraScheduler.TimeScaleMonth timeScaleMonth4 = new DevExpress.XtraScheduler.TimeScaleMonth();
-            DevExpress.XtraScheduler.TimeScaleWeek timeScaleWeek4 = new DevExpress.XtraScheduler.TimeScaleWeek();
-            DevExpress.XtraScheduler.TimeScaleDay timeScaleDay4 = new DevExpress.XtraScheduler.TimeScaleDay();
-            DevExpress.XtraScheduler.TimeScaleHour timeScaleHour4 = new DevExpress.XtraScheduler.TimeScaleHour();
-            DevExpress.XtraScheduler.TimeScale15Minutes timeScale15Minutes4 = new DevExpress.XtraScheduler.TimeScale15Minutes();
-            DevExpress.XtraScheduler.TimeRuler timeRuler4 = new DevExpress.XtraScheduler.TimeRuler();
-            this.No = new DevExpress.XtraScheduler.Native.ResourceTreeColumn();
+            DevExpress.XtraScheduler.SchedulerColorSchema schedulerColorSchema1 = new DevExpress.XtraScheduler.SchedulerColorSchema();
+            DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeScaleYear timeScaleYear1 = new DevExpress.XtraScheduler.TimeScaleYear();
+            DevExpress.XtraScheduler.TimeScaleQuarter timeScaleQuarter1 = new DevExpress.XtraScheduler.TimeScaleQuarter();
+            DevExpress.XtraScheduler.TimeScaleMonth timeScaleMonth1 = new DevExpress.XtraScheduler.TimeScaleMonth();
+            DevExpress.XtraScheduler.TimeScaleWeek timeScaleWeek1 = new DevExpress.XtraScheduler.TimeScaleWeek();
+            DevExpress.XtraScheduler.TimeScaleDay timeScaleDay1 = new DevExpress.XtraScheduler.TimeScaleDay();
+            DevExpress.XtraScheduler.TimeScaleHour timeScaleHour1 = new DevExpress.XtraScheduler.TimeScaleHour();
+            DevExpress.XtraScheduler.TimeScale15Minutes timeScale15Minutes1 = new DevExpress.XtraScheduler.TimeScale15Minutes();
+            DevExpress.XtraScheduler.TimeScaleYear timeScaleYear2 = new DevExpress.XtraScheduler.TimeScaleYear();
+            DevExpress.XtraScheduler.TimeScaleQuarter timeScaleQuarter2 = new DevExpress.XtraScheduler.TimeScaleQuarter();
+            DevExpress.XtraScheduler.TimeScaleMonth timeScaleMonth2 = new DevExpress.XtraScheduler.TimeScaleMonth();
+            DevExpress.XtraScheduler.TimeScaleWeek timeScaleWeek2 = new DevExpress.XtraScheduler.TimeScaleWeek();
+            DevExpress.XtraScheduler.TimeScaleDay timeScaleDay2 = new DevExpress.XtraScheduler.TimeScaleDay();
+            DevExpress.XtraScheduler.TimeScaleHour timeScaleHour2 = new DevExpress.XtraScheduler.TimeScaleHour();
+            DevExpress.XtraScheduler.TimeScale15Minutes timeScale15Minutes2 = new DevExpress.XtraScheduler.TimeScale15Minutes();
+            DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
             this.schedulerControl1 = new DevExpress.XtraScheduler.SchedulerControl();
             this.schedulerStorage1 = new DevExpress.XtraScheduler.SchedulerStorage(this.components);
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.resourcesTree1 = new DevExpress.XtraScheduler.UI.ResourcesTree();
             this.UserAction = new DevExpress.XtraScheduler.Native.ResourceTreeColumn();
             this.time = new DevExpress.XtraScheduler.Native.ResourceTreeColumn();
+            this.resourceTreeColumn1 = new DevExpress.XtraScheduler.Native.ResourceTreeColumn();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
@@ -69,18 +69,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.SuspendLayout();
             // 
-            // No
-            // 
-            this.No.AppearanceHeader.Options.UseTextOptions = true;
-            this.No.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.No.Caption = "No";
-            this.No.FieldName = "ID";
-            this.No.MinWidth = 23;
-            this.No.Name = "No";
-            this.No.Visible = true;
-            this.No.VisibleIndex = 0;
-            this.No.Width = 45;
-            // 
             // schedulerControl1
             // 
             this.schedulerControl1.ActiveViewType = DevExpress.XtraScheduler.SchedulerViewType.Gantt;
@@ -91,20 +79,20 @@
             this.schedulerControl1.GroupType = DevExpress.XtraScheduler.SchedulerGroupType.Resource;
             this.schedulerControl1.Location = new System.Drawing.Point(0, 0);
             this.schedulerControl1.Name = "schedulerControl1";
-            schedulerColorSchema2.Cell = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            schedulerColorSchema2.CellBorder = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(228)))), ((int)(((byte)(177)))));
-            schedulerColorSchema2.CellBorderDark = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            schedulerColorSchema2.CellLight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            schedulerColorSchema2.CellLightBorder = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            schedulerColorSchema2.CellLightBorderDark = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.schedulerControl1.ResourceColorSchemas.Add(schedulerColorSchema2);
-            this.schedulerControl1.Size = new System.Drawing.Size(980, 420);
-            this.schedulerControl1.Start = new System.DateTime(2020, 5, 12, 0, 0, 0, 0);
+            schedulerColorSchema1.Cell = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            schedulerColorSchema1.CellBorder = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            schedulerColorSchema1.CellBorderDark = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            schedulerColorSchema1.CellLight = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            schedulerColorSchema1.CellLightBorder = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            schedulerColorSchema1.CellLightBorderDark = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.schedulerControl1.ResourceColorSchemas.Add(schedulerColorSchema1);
+            this.schedulerControl1.Size = new System.Drawing.Size(980, 587);
+            this.schedulerControl1.Start = new System.DateTime(2020, 5, 1, 0, 0, 0, 0);
             this.schedulerControl1.TabIndex = 0;
             this.schedulerControl1.Text = "schedulerControl1";
             this.schedulerControl1.Views.AgendaView.Enabled = false;
             this.schedulerControl1.Views.DayView.Enabled = false;
-            this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler3);
+            this.schedulerControl1.Views.DayView.TimeRulers.Add(timeRuler1);
             this.schedulerControl1.Views.GanttView.Appearance.AdditionalHeaderCaption.BackColor = System.Drawing.Color.Aqua;
             this.schedulerControl1.Views.GanttView.Appearance.AdditionalHeaderCaption.Options.UseBackColor = true;
             this.schedulerControl1.Views.GanttView.Appearance.AlternateHeaderCaptionLine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -117,21 +105,21 @@
             this.schedulerControl1.Views.GanttView.CellsAutoHeightOptions.MinHeight = 10;
             this.schedulerControl1.Views.GanttView.OptionsSelectionBehavior.KeepSelectedAppointments = true;
             this.schedulerControl1.Views.GanttView.ResourcesPerPage = 12;
-            timeScaleYear3.Enabled = false;
-            timeScaleQuarter3.Enabled = false;
-            timeScaleMonth3.DisplayFormat = "MM/yyyy";
-            timeScaleWeek3.Enabled = false;
-            timeScaleDay3.DisplayFormat = "dd/MM";
-            timeScaleDay3.Width = 70;
-            timeScaleHour3.Enabled = false;
-            timeScale15Minutes3.Enabled = false;
-            this.schedulerControl1.Views.GanttView.Scales.Add(timeScaleYear3);
-            this.schedulerControl1.Views.GanttView.Scales.Add(timeScaleQuarter3);
-            this.schedulerControl1.Views.GanttView.Scales.Add(timeScaleMonth3);
-            this.schedulerControl1.Views.GanttView.Scales.Add(timeScaleWeek3);
-            this.schedulerControl1.Views.GanttView.Scales.Add(timeScaleDay3);
-            this.schedulerControl1.Views.GanttView.Scales.Add(timeScaleHour3);
-            this.schedulerControl1.Views.GanttView.Scales.Add(timeScale15Minutes3);
+            timeScaleYear1.Enabled = false;
+            timeScaleQuarter1.Enabled = false;
+            timeScaleMonth1.DisplayFormat = "MM/yyyy";
+            timeScaleWeek1.Enabled = false;
+            timeScaleDay1.DisplayFormat = "dd/MM";
+            timeScaleDay1.Width = 70;
+            timeScaleHour1.Enabled = false;
+            timeScale15Minutes1.Enabled = false;
+            this.schedulerControl1.Views.GanttView.Scales.Add(timeScaleYear1);
+            this.schedulerControl1.Views.GanttView.Scales.Add(timeScaleQuarter1);
+            this.schedulerControl1.Views.GanttView.Scales.Add(timeScaleMonth1);
+            this.schedulerControl1.Views.GanttView.Scales.Add(timeScaleWeek1);
+            this.schedulerControl1.Views.GanttView.Scales.Add(timeScaleDay1);
+            this.schedulerControl1.Views.GanttView.Scales.Add(timeScaleHour1);
+            this.schedulerControl1.Views.GanttView.Scales.Add(timeScale15Minutes1);
             this.schedulerControl1.Views.GanttView.SelectionBar.Height = 10;
             this.schedulerControl1.Views.GanttView.SelectionBar.Visible = false;
             this.schedulerControl1.Views.GanttView.ShowResourceHeaders = false;
@@ -140,31 +128,31 @@
             this.schedulerControl1.Views.TimelineView.CellsAutoHeightOptions.MinHeight = 16;
             this.schedulerControl1.Views.TimelineView.Enabled = false;
             this.schedulerControl1.Views.TimelineView.ResourcesPerPage = 10;
-            timeScaleYear4.Enabled = false;
-            timeScaleYear4.Width = 58;
-            timeScaleQuarter4.Enabled = false;
-            timeScaleQuarter4.Width = 58;
-            timeScaleMonth4.Enabled = false;
-            timeScaleMonth4.Width = 58;
-            timeScaleWeek4.Enabled = false;
-            timeScaleWeek4.Width = 58;
-            timeScaleDay4.DisplayFormat = "MM/dd/yyyy";
-            timeScaleDay4.Width = 58;
-            timeScaleHour4.Enabled = false;
-            timeScaleHour4.Width = 87;
-            timeScale15Minutes4.Enabled = false;
-            timeScale15Minutes4.Width = 58;
-            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScaleYear4);
-            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScaleQuarter4);
-            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScaleMonth4);
-            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScaleWeek4);
-            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScaleDay4);
-            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScaleHour4);
-            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScale15Minutes4);
+            timeScaleYear2.Enabled = false;
+            timeScaleYear2.Width = 58;
+            timeScaleQuarter2.Enabled = false;
+            timeScaleQuarter2.Width = 58;
+            timeScaleMonth2.Enabled = false;
+            timeScaleMonth2.Width = 58;
+            timeScaleWeek2.Enabled = false;
+            timeScaleWeek2.Width = 58;
+            timeScaleDay2.DisplayFormat = "MM/dd/yyyy";
+            timeScaleDay2.Width = 58;
+            timeScaleHour2.Enabled = false;
+            timeScaleHour2.Width = 87;
+            timeScale15Minutes2.Enabled = false;
+            timeScale15Minutes2.Width = 58;
+            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScaleYear2);
+            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScaleQuarter2);
+            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScaleMonth2);
+            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScaleWeek2);
+            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScaleDay2);
+            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScaleHour2);
+            this.schedulerControl1.Views.TimelineView.Scales.Add(timeScale15Minutes2);
             this.schedulerControl1.Views.TimelineView.WorkTime = new DevExpress.XtraScheduler.WorkTimeInterval(System.TimeSpan.Parse("01:00:00"), System.TimeSpan.Parse("24.00:00:00"));
             this.schedulerControl1.Views.WeekView.Enabled = false;
             this.schedulerControl1.Views.WorkWeekView.Enabled = false;
-            this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler4);
+            this.schedulerControl1.Views.WorkWeekView.TimeRulers.Add(timeRuler2);
             this.schedulerControl1.AppointmentViewInfoCustomizing += new DevExpress.XtraScheduler.AppointmentViewInfoCustomizingEventHandler(this.schedulerControl1_AppointmentViewInfoCustomizing);
             this.schedulerControl1.PopupMenuShowing += new DevExpress.XtraScheduler.PopupMenuShowingEventHandler(this.schedulerControl1_PopupMenuShowing);
             this.schedulerControl1.EditAppointmentFormShowing += new DevExpress.XtraScheduler.AppointmentFormEventHandler(this.schedulerControl1_EditAppointmentFormShowing);
@@ -186,7 +174,7 @@
             this.splitContainerControl1.Panel1.Text = "Panel1";
             this.splitContainerControl1.Panel2.Controls.Add(this.schedulerControl1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1182, 420);
+            this.splitContainerControl1.Size = new System.Drawing.Size(1182, 587);
             this.splitContainerControl1.SplitterPosition = 197;
             this.splitContainerControl1.TabIndex = 1;
             this.splitContainerControl1.Text = "splitContainerControl1";
@@ -194,16 +182,17 @@
             // resourcesTree1
             // 
             this.resourcesTree1.Columns.AddRange(new DevExpress.XtraTreeList.Columns.TreeListColumn[] {
-            this.No,
             this.UserAction,
-            this.time});
+            this.time,
+            this.resourceTreeColumn1});
+            this.resourcesTree1.Cursor = System.Windows.Forms.Cursors.SizeWE;
             this.resourcesTree1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.resourcesTree1.Location = new System.Drawing.Point(0, 0);
             this.resourcesTree1.MinWidth = 23;
             this.resourcesTree1.Name = "resourcesTree1";
             this.resourcesTree1.OptionsBehavior.Editable = false;
             this.resourcesTree1.SchedulerControl = this.schedulerControl1;
-            this.resourcesTree1.Size = new System.Drawing.Size(197, 420);
+            this.resourcesTree1.Size = new System.Drawing.Size(197, 587);
             this.resourcesTree1.TabIndex = 0;
             this.resourcesTree1.TreeLevelWidth = 14;
             // 
@@ -216,20 +205,28 @@
             this.UserAction.MinWidth = 23;
             this.UserAction.Name = "UserAction";
             this.UserAction.Visible = true;
-            this.UserAction.VisibleIndex = 1;
-            this.UserAction.Width = 94;
+            this.UserAction.VisibleIndex = 0;
+            this.UserAction.Width = 97;
             // 
             // time
             // 
             this.time.AppearanceHeader.Options.UseTextOptions = true;
             this.time.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.time.Caption = "Mã";
-            this.time.FieldName = "RoomCode";
+            this.time.FieldName = "RoomName";
             this.time.MinWidth = 23;
             this.time.Name = "time";
             this.time.Visible = true;
-            this.time.VisibleIndex = 2;
-            this.time.Width = 55;
+            this.time.VisibleIndex = 1;
+            this.time.Width = 98;
+            // 
+            // resourceTreeColumn1
+            // 
+            this.resourceTreeColumn1.Caption = "Type";
+            this.resourceTreeColumn1.FieldName = "RoomTypeCode";
+            this.resourceTreeColumn1.Name = "resourceTreeColumn1";
+            this.resourceTreeColumn1.Visible = true;
+            this.resourceTreeColumn1.VisibleIndex = 2;
             // 
             // popupMenu1
             // 
@@ -267,7 +264,7 @@
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 420);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 587);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Size = new System.Drawing.Size(1182, 0);
             // 
@@ -277,7 +274,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 420);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 587);
             // 
             // barDockControlRight
             // 
@@ -285,20 +282,20 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(1182, 0);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 420);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 587);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1182, 420);
+            this.ClientSize = new System.Drawing.Size(1182, 587);
             this.Controls.Add(this.splitContainerControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "Form1";
-            this.Text = "Cheduler Control Demo";
+            this.Text = "Sơ đồ đường";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.schedulerControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage1)).EndInit();
@@ -318,7 +315,6 @@
         private DevExpress.XtraScheduler.SchedulerStorage schedulerStorage1;
         private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
         private DevExpress.XtraScheduler.UI.ResourcesTree resourcesTree1;
-        private DevExpress.XtraScheduler.Native.ResourceTreeColumn No;
         private DevExpress.XtraScheduler.Native.ResourceTreeColumn UserAction;
         private DevExpress.XtraScheduler.Native.ResourceTreeColumn time;
         private DevExpress.XtraBars.PopupMenu popupMenu1;
@@ -328,7 +324,7 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
-
+        private DevExpress.XtraScheduler.Native.ResourceTreeColumn resourceTreeColumn1;
     }
 }
 

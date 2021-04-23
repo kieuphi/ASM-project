@@ -52,7 +52,7 @@ namespace AMS.View.RoomMapv2
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(7, 32);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 20);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Properties.AllowFocused = false;
             this.pictureBox2.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -62,13 +62,13 @@ namespace AMS.View.RoomMapv2
             this.pictureBox2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureBox2.Properties.ShowMenu = false;
             this.pictureBox2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureBox2.Size = new System.Drawing.Size(28, 31);
+            this.pictureBox2.Size = new System.Drawing.Size(24, 31);
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(37, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(33, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Properties.AllowFocused = false;
             this.pictureBox1.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -84,7 +84,7 @@ namespace AMS.View.RoomMapv2
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(68, 32);
+            this.pictureBox3.Location = new System.Drawing.Point(55, 20);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Properties.AllowFocused = false;
             this.pictureBox3.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -94,7 +94,7 @@ namespace AMS.View.RoomMapv2
             this.pictureBox3.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureBox3.Properties.ShowMenu = false;
             this.pictureBox3.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            this.pictureBox3.Size = new System.Drawing.Size(28, 31);
+            this.pictureBox3.Size = new System.Drawing.Size(26, 31);
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
             // 
@@ -103,7 +103,7 @@ namespace AMS.View.RoomMapv2
             this.lbl_RoomNum.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_RoomNum.AutoSize = true;
             this.lbl_RoomNum.Enabled = false;
-            this.lbl_RoomNum.Location = new System.Drawing.Point(34, 10);
+            this.lbl_RoomNum.Location = new System.Drawing.Point(20, 3);
             this.lbl_RoomNum.Name = "lbl_RoomNum";
             this.lbl_RoomNum.Size = new System.Drawing.Size(38, 14);
             this.lbl_RoomNum.TabIndex = 0;
@@ -127,21 +127,21 @@ namespace AMS.View.RoomMapv2
             this.pnl_Back.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Back.Location = new System.Drawing.Point(0, 0);
             this.pnl_Back.Name = "pnl_Back";
-            this.pnl_Back.Size = new System.Drawing.Size(107, 101);
+            this.pnl_Back.Size = new System.Drawing.Size(84, 77);
             this.pnl_Back.TabIndex = 1;
             this.pnl_Back.Click += new System.EventHandler(this.pnl_Back_Click);
             // 
             // lbl_RoomUsers
             // 
             this.lbl_RoomUsers.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbl_RoomUsers.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.lbl_RoomUsers.Appearance.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Bold);
             this.lbl_RoomUsers.Appearance.ForeColor = System.Drawing.Color.Teal;
             this.lbl_RoomUsers.Appearance.Options.UseFont = true;
             this.lbl_RoomUsers.Appearance.Options.UseForeColor = true;
             this.lbl_RoomUsers.Enabled = false;
-            this.lbl_RoomUsers.Location = new System.Drawing.Point(14, 69);
+            this.lbl_RoomUsers.Location = new System.Drawing.Point(3, 57);
             this.lbl_RoomUsers.Name = "lbl_RoomUsers";
-            this.lbl_RoomUsers.Size = new System.Drawing.Size(82, 14);
+            this.lbl_RoomUsers.Size = new System.Drawing.Size(75, 13);
             this.lbl_RoomUsers.TabIndex = 1;
             this.lbl_RoomUsers.Text = "labelControl1";
             // 
@@ -152,7 +152,7 @@ namespace AMS.View.RoomMapv2
             this.pictureBox4.InitialImage = null;
             this.pictureBox4.Location = new System.Drawing.Point(0, 0);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(107, 101);
+            this.pictureBox4.Size = new System.Drawing.Size(84, 77);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
@@ -201,7 +201,7 @@ namespace AMS.View.RoomMapv2
             this.Controls.Add(this.pnl_Back);
             this.DoubleBuffered = true;
             this.Name = "RoomUC";
-            this.Size = new System.Drawing.Size(107, 101);
+            this.Size = new System.Drawing.Size(84, 77);
             this.Click += new System.EventHandler(this.RoomUC_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1.Properties)).EndInit();
